@@ -1,0 +1,20 @@
+[project]
+name = "qbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Erick-WG", email = "116720470Erick-WG@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=3.29.0",
+    "streamlit>=1.65.0",
+]
+
+[project.scripts]
+qbot = "qbot:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
