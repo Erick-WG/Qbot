@@ -8,8 +8,11 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "dotenv>=0.9.9",
     "openai>=3.29.0",
+    "pandas>=3.0.6",
     "streamlit>=1.65.0",
+    "tabulate>=0.10.0",
 ]
 
 [project.scripts]
