@@ -103,18 +103,21 @@ def read_student_csv(source: str | Path | TextIO) -> dict[str, list[dict[str, An
     return dict(grouped)
 
 read_student_csv_tool = {
-  "name": "read_student_csv",
-  "description": "Read a student records CSV file from a given file path, handle flexible column headers using internal aliases, parse dirty numeric values, and group rows by student identifier.",
-  "parameters": {
-    "type": "object",
-    "properties": {
-      "source": {
-        "type": "string",
-        "description": "The file path or path string to the student records CSV file."
+  "type": "function",
+  "function": {
+      "name": "read_student_csv",
+      "description": "Read a student records CSV file from a given file path, handle flexible column headers using internal aliases, parse dirty numeric values, and group rows by student identifier.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "type": "string",
+            "description": "The file path or path string to the student records CSV file."
+          }
+        },
+        "required": [
+          "source"
+        ]
       }
-    },
-    "required": [
-      "source"
-    ]
   }
 }
