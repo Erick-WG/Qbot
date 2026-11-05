@@ -1,0 +1,15 @@
+student_id,student_name,subject,score,attendance,remarks,date
+STU-1001,Alex Chen,Mathematics,88,92%,Very curious and active in class discussions. Strong problem solving.,2026-01-15
+STU-1001,Alex Chen,Physics,82,90%,Good grasp of practical experiments and hands-on lab work.,2026-01-15
+STU-1001,Alex Chen,Computer Science,92,94%,Excellent initiative in code design and computational thinking.,2026-01-15
+STU-1001,Alex Chen,Chemistry,84,91%,Methodical approach to lab experiments and safety.,2026-01-15
+STU-1001,Alex Chen,Biology,78,89%,Attentive during practical observations and diagrams.,2026-01-15
+STU-1001,Alex Chen,History,64,88%,Needs help structuring analytical essay responses.,2026-01-15
+STU-1001,Alex Chen,English,58,88%,Struggle with long writing pieces; needs support on essays.,2026-01-15
+STU-1001,Alex Chen,Mathematics,94,95%,"Excellent project output, shows independent initiative.",2026-03-20
+STU-1001,Alex Chen,Physics,89,92%,Collaborative worker during group assignments.,2026-03-20
+STU-1001,Alex Chen,Computer Science,96,95%,Demonstrates advanced algorithm design and self-directed study.,2026-03-20
+STU-1001,Alex Chen,Chemistry,87,92%,Shows steady improvement in quantitative problem solving.,2026-03-20
+STU-1001,Alex Chen,Biology,81,90%,Consistent performance and active participant.,2026-03-20
+STU-1001,Alex Chen,History,60,86%,"Slight drop in coursework completion, needs structured support.",2026-03-20
+STU-1001,Alex Chen,English,52,85%,"Incomplete homework assignments, needs structured help.",2026-03-20

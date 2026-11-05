@@ -1,0 +1,281 @@
+student_id,student_name,subject,score,attendance,remarks,date
+STU-1001,Alex Chen,Mathematics,87,90%,Demonstrates strong performance with collaborative approach in class.,2026-01-15
+STU-1001,Alex Chen,Mathematics,90,90%,Shows steady effort; observed hands-on behavior in recent units.,2026-03-20
+STU-1001,Alex Chen,Physics,93,90%,Demonstrates strong performance with collaborative approach in class.,2026-01-15
+STU-1001,Alex Chen,Physics,95,90%,Shows steady effort; observed hands-on behavior in recent units.,2026-03-20
+STU-1001,Alex Chen,Computer Science,91,90%,Demonstrates strong performance with collaborative approach in class.,2026-01-15
+STU-1001,Alex Chen,Computer Science,96,90%,Shows steady effort; observed hands-on behavior in recent units.,2026-03-20
+STU-1001,Alex Chen,English,54,90%,Demonstrates strong performance with collaborative approach in class.,2026-01-15
+STU-1001,Alex Chen,English,58,90%,Shows steady effort; observed hands-on behavior in recent units.,2026-03-20
+STU-1001,Alex Chen,Chemistry,83,90%,Demonstrates strong performance with collaborative approach in class.,2026-01-15
+STU-1001,Alex Chen,Chemistry,82,90%,Shows steady effort; observed hands-on behavior in recent units.,2026-03-20
+STU-1001,Alex Chen,Biology,83,90%,Demonstrates strong performance with collaborative approach in class.,2026-01-15
+STU-1001,Alex Chen,Biology,89,90%,Shows steady effort; observed hands-on behavior in recent units.,2026-03-20
+STU-1001,Alex Chen,History,61,90%,Demonstrates strong performance with collaborative approach in class.,2026-01-15
+STU-1001,Alex Chen,History,61,90%,Shows steady effort; observed hands-on behavior in recent units.,2026-03-20
+STU-1002,Bella Gomez,Biology,88,86%,Demonstrates strong performance with curious approach in class.,2026-01-15
+STU-1002,Bella Gomez,Biology,87,86%,Shows steady effort; observed diagram behavior in recent units.,2026-03-20
+STU-1002,Bella Gomez,Chemistry,85,86%,Demonstrates strong performance with curious approach in class.,2026-01-15
+STU-1002,Bella Gomez,Chemistry,82,86%,Shows steady effort; observed diagram behavior in recent units.,2026-03-20
+STU-1002,Bella Gomez,Health,91,86%,Demonstrates strong performance with curious approach in class.,2026-01-15
+STU-1002,Bella Gomez,Health,93,86%,Shows steady effort; observed diagram behavior in recent units.,2026-03-20
+STU-1002,Bella Gomez,Math,73,86%,Demonstrates strong performance with curious approach in class.,2026-01-15
+STU-1002,Bella Gomez,Math,71,86%,Shows steady effort; observed diagram behavior in recent units.,2026-03-20
+STU-1002,Bella Gomez,Physics,81,86%,Demonstrates strong performance with curious approach in class.,2026-01-15
+STU-1002,Bella Gomez,Physics,88,86%,Shows steady effort; observed diagram behavior in recent units.,2026-03-20
+STU-1002,Bella Gomez,English,86,86%,Demonstrates strong performance with curious approach in class.,2026-01-15
+STU-1002,Bella Gomez,English,84,86%,Shows steady effort; observed diagram behavior in recent units.,2026-03-20
+STU-1002,Bella Gomez,Art,92,86%,Demonstrates strong performance with curious approach in class.,2026-01-15
+STU-1002,Bella Gomez,Art,93,86%,Shows steady effort; observed diagram behavior in recent units.,2026-03-20
+STU-1003,Charlie Davis,English,82,78%,Demonstrates strong performance with discussion approach in class.,2026-01-15
+STU-1003,Charlie Davis,English,83,78%,Shows steady effort; observed presentation behavior in recent units.,2026-03-20
+STU-1003,Charlie Davis,History,91,78%,Demonstrates strong performance with discussion approach in class.,2026-01-15
+STU-1003,Charlie Davis,History,90,78%,Shows steady effort; observed presentation behavior in recent units.,2026-03-20
+STU-1003,Charlie Davis,Literature,91,78%,Demonstrates strong performance with discussion approach in class.,2026-01-15
+STU-1003,Charlie Davis,Literature,87,78%,Shows steady effort; observed presentation behavior in recent units.,2026-03-20
+STU-1003,Charlie Davis,Art,79,78%,Demonstrates strong performance with discussion approach in class.,2026-01-15
+STU-1003,Charlie Davis,Art,84,78%,Shows steady effort; observed presentation behavior in recent units.,2026-03-20
+STU-1003,Charlie Davis,Drama,80,78%,Demonstrates strong performance with discussion approach in class.,2026-01-15
+STU-1003,Charlie Davis,Drama,81,78%,Shows steady effort; observed presentation behavior in recent units.,2026-03-20
+STU-1003,Charlie Davis,Media,86,78%,Demonstrates strong performance with discussion approach in class.,2026-01-15
+STU-1003,Charlie Davis,Media,84,78%,Shows steady effort; observed presentation behavior in recent units.,2026-03-20
+STU-1003,Charlie Davis,Business,72,78%,Demonstrates strong performance with discussion approach in class.,2026-01-15
+STU-1003,Charlie Davis,Business,68,78%,Shows steady effort; observed presentation behavior in recent units.,2026-03-20
+STU-1004,Diana Prince,Art,97,84%,Demonstrates strong performance with visual approach in class.,2026-01-15
+STU-1004,Diana Prince,Art,92,84%,Shows steady effort; observed chart behavior in recent units.,2026-03-20
+STU-1004,Diana Prince,Design,93,84%,Demonstrates strong performance with visual approach in class.,2026-01-15
+STU-1004,Diana Prince,Design,91,84%,Shows steady effort; observed chart behavior in recent units.,2026-03-20
+STU-1004,Diana Prince,Media,85,84%,Demonstrates strong performance with visual approach in class.,2026-01-15
+STU-1004,Diana Prince,Media,85,84%,Shows steady effort; observed chart behavior in recent units.,2026-03-20
+STU-1004,Diana Prince,Computer Science,61,84%,Demonstrates strong performance with visual approach in class.,2026-01-15
+STU-1004,Diana Prince,Computer Science,61,84%,Shows steady effort; observed chart behavior in recent units.,2026-03-20
+STU-1004,Diana Prince,English,76,84%,Demonstrates strong performance with visual approach in class.,2026-01-15
+STU-1004,Diana Prince,English,71,84%,Shows steady effort; observed chart behavior in recent units.,2026-03-20
+STU-1004,Diana Prince,Math,68,84%,Demonstrates strong performance with visual approach in class.,2026-01-15
+STU-1004,Diana Prince,Math,72,84%,Shows steady effort; observed chart behavior in recent units.,2026-03-20
+STU-1004,Diana Prince,History,80,84%,Demonstrates strong performance with visual approach in class.,2026-01-15
+STU-1004,Diana Prince,History,75,84%,Shows steady effort; observed chart behavior in recent units.,2026-03-20
+STU-1005,Ethan Hunt,Computer Science,90,85%,Demonstrates strong performance with build approach in class.,2026-01-15
+STU-1005,Ethan Hunt,Computer Science,89,85%,Shows steady effort; observed experiment behavior in recent units.,2026-03-20
+STU-1005,Ethan Hunt,Technology,93,85%,Demonstrates strong performance with build approach in class.,2026-01-15
+STU-1005,Ethan Hunt,Technology,100,85%,Shows steady effort; observed experiment behavior in recent units.,2026-03-20
+STU-1005,Ethan Hunt,Math,83,85%,Demonstrates strong performance with build approach in class.,2026-01-15
+STU-1005,Ethan Hunt,Math,84,85%,Shows steady effort; observed experiment behavior in recent units.,2026-03-20
+STU-1005,Ethan Hunt,Physics,81,85%,Demonstrates strong performance with build approach in class.,2026-01-15
+STU-1005,Ethan Hunt,Physics,86,85%,Shows steady effort; observed experiment behavior in recent units.,2026-03-20
+STU-1005,Ethan Hunt,Chemistry,91,85%,Demonstrates strong performance with build approach in class.,2026-01-15
+STU-1005,Ethan Hunt,Chemistry,88,85%,Shows steady effort; observed experiment behavior in recent units.,2026-03-20
+STU-1005,Ethan Hunt,Coding,97,85%,Demonstrates strong performance with build approach in class.,2026-01-15
+STU-1005,Ethan Hunt,Coding,100,85%,Shows steady effort; observed experiment behavior in recent units.,2026-03-20
+STU-1005,Ethan Hunt,English,62,85%,Demonstrates strong performance with build approach in class.,2026-01-15
+STU-1005,Ethan Hunt,English,59,85%,Shows steady effort; observed experiment behavior in recent units.,2026-03-20
+STU-1006,Fiona Gallagher,Business,85,94%,Demonstrates strong performance with team approach in class.,2026-01-15
+STU-1006,Fiona Gallagher,Business,81,94%,Shows steady effort; observed group behavior in recent units.,2026-03-20
+STU-1006,Fiona Gallagher,Economics,81,94%,Demonstrates strong performance with team approach in class.,2026-01-15
+STU-1006,Fiona Gallagher,Economics,76,94%,Shows steady effort; observed group behavior in recent units.,2026-03-20
+STU-1006,Fiona Gallagher,Accounting,92,94%,Demonstrates strong performance with team approach in class.,2026-01-15
+STU-1006,Fiona Gallagher,Accounting,95,94%,Shows steady effort; observed group behavior in recent units.,2026-03-20
+STU-1006,Fiona Gallagher,Math,73,94%,Demonstrates strong performance with team approach in class.,2026-01-15
+STU-1006,Fiona Gallagher,Math,69,94%,Shows steady effort; observed group behavior in recent units.,2026-03-20
+STU-1006,Fiona Gallagher,English,78,94%,Demonstrates strong performance with team approach in class.,2026-01-15
+STU-1006,Fiona Gallagher,English,85,94%,Shows steady effort; observed group behavior in recent units.,2026-03-20
+STU-1006,Fiona Gallagher,History,66,94%,Demonstrates strong performance with team approach in class.,2026-01-15
+STU-1006,Fiona Gallagher,History,71,94%,Shows steady effort; observed group behavior in recent units.,2026-03-20
+STU-1006,Fiona Gallagher,Statistics,80,94%,Demonstrates strong performance with team approach in class.,2026-01-15
+STU-1006,Fiona Gallagher,Statistics,87,94%,Shows steady effort; observed group behavior in recent units.,2026-03-20
+STU-1007,George Clark,Math,58,78%,Demonstrates strong performance with struggle approach in class.,2026-01-15
+STU-1007,George Clark,Math,55,78%,Shows steady effort; observed needs help behavior in recent units.,2026-03-20
+STU-1007,George Clark,Physics,49,78%,Demonstrates strong performance with struggle approach in class.,2026-01-15
+STU-1007,George Clark,Physics,46,78%,Shows steady effort; observed needs help behavior in recent units.,2026-03-20
+STU-1007,George Clark,English,60,78%,Demonstrates strong performance with struggle approach in class.,2026-01-15
+STU-1007,George Clark,English,60,78%,Shows steady effort; observed needs help behavior in recent units.,2026-03-20
+STU-1007,George Clark,History,60,78%,Demonstrates strong performance with struggle approach in class.,2026-01-15
+STU-1007,George Clark,History,56,78%,Shows steady effort; observed needs help behavior in recent units.,2026-03-20
+STU-1007,George Clark,Chemistry,46,78%,Demonstrates strong performance with struggle approach in class.,2026-01-15
+STU-1007,George Clark,Chemistry,49,78%,Shows steady effort; observed needs help behavior in recent units.,2026-03-20
+STU-1007,George Clark,Biology,55,78%,Demonstrates strong performance with struggle approach in class.,2026-01-15
+STU-1007,George Clark,Biology,57,78%,Shows steady effort; observed needs help behavior in recent units.,2026-03-20
+STU-1007,George Clark,Art,68,78%,Demonstrates strong performance with struggle approach in class.,2026-01-15
+STU-1007,George Clark,Art,66,78%,Shows steady effort; observed needs help behavior in recent units.,2026-03-20
+STU-1008,Hannah Abbott,Biology,76,80%,Demonstrates strong performance with engaged approach in class.,2026-01-15
+STU-1008,Hannah Abbott,Biology,72,80%,Shows steady effort; observed asks questions behavior in recent units.,2026-03-20
+STU-1008,Hannah Abbott,Chemistry,78,80%,Demonstrates strong performance with engaged approach in class.,2026-01-15
+STU-1008,Hannah Abbott,Chemistry,75,80%,Shows steady effort; observed asks questions behavior in recent units.,2026-03-20
+STU-1008,Hannah Abbott,Math,82,80%,Demonstrates strong performance with engaged approach in class.,2026-01-15
+STU-1008,Hannah Abbott,Math,84,80%,Shows steady effort; observed asks questions behavior in recent units.,2026-03-20
+STU-1008,Hannah Abbott,English,79,80%,Demonstrates strong performance with engaged approach in class.,2026-01-15
+STU-1008,Hannah Abbott,English,80,80%,Shows steady effort; observed asks questions behavior in recent units.,2026-03-20
+STU-1008,Hannah Abbott,Health,85,80%,Demonstrates strong performance with engaged approach in class.,2026-01-15
+STU-1008,Hannah Abbott,Health,88,80%,Shows steady effort; observed asks questions behavior in recent units.,2026-03-20
+STU-1008,Hannah Abbott,Physics,73,80%,Demonstrates strong performance with engaged approach in class.,2026-01-15
+STU-1008,Hannah Abbott,Physics,71,80%,Shows steady effort; observed asks questions behavior in recent units.,2026-03-20
+STU-1008,Hannah Abbott,History,76,80%,Demonstrates strong performance with engaged approach in class.,2026-01-15
+STU-1008,Hannah Abbott,History,75,80%,Shows steady effort; observed asks questions behavior in recent units.,2026-03-20
+STU-1009,Ian Malcolm,Mathematics,96,92%,Demonstrates strong performance with self-directed approach in class.,2026-01-15
+STU-1009,Ian Malcolm,Mathematics,91,92%,Shows steady effort; observed initiative behavior in recent units.,2026-03-20
+STU-1009,Ian Malcolm,Statistics,91,92%,Demonstrates strong performance with self-directed approach in class.,2026-01-15
+STU-1009,Ian Malcolm,Statistics,96,92%,Shows steady effort; observed initiative behavior in recent units.,2026-03-20
+STU-1009,Ian Malcolm,Physics,94,92%,Demonstrates strong performance with self-directed approach in class.,2026-01-15
+STU-1009,Ian Malcolm,Physics,98,92%,Shows steady effort; observed initiative behavior in recent units.,2026-03-20
+STU-1009,Ian Malcolm,Chemistry,91,92%,Demonstrates strong performance with self-directed approach in class.,2026-01-15
+STU-1009,Ian Malcolm,Chemistry,96,92%,Shows steady effort; observed initiative behavior in recent units.,2026-03-20
+STU-1009,Ian Malcolm,Computer Science,86,92%,Demonstrates strong performance with self-directed approach in class.,2026-01-15
+STU-1009,Ian Malcolm,Computer Science,93,92%,Shows steady effort; observed initiative behavior in recent units.,2026-03-20
+STU-1009,Ian Malcolm,Biology,86,92%,Demonstrates strong performance with self-directed approach in class.,2026-01-15
+STU-1009,Ian Malcolm,Biology,84,92%,Shows steady effort; observed initiative behavior in recent units.,2026-03-20
+STU-1009,Ian Malcolm,English,76,92%,Demonstrates strong performance with self-directed approach in class.,2026-01-15
+STU-1009,Ian Malcolm,English,78,92%,Shows steady effort; observed initiative behavior in recent units.,2026-03-20
+STU-1010,Julia Roberts,Literature,87,93%,Demonstrates strong performance with debate approach in class.,2026-01-15
+STU-1010,Julia Roberts,Literature,90,93%,Shows steady effort; observed explains behavior in recent units.,2026-03-20
+STU-1010,Julia Roberts,History,91,93%,Demonstrates strong performance with debate approach in class.,2026-01-15
+STU-1010,Julia Roberts,History,91,93%,Shows steady effort; observed explains behavior in recent units.,2026-03-20
+STU-1010,Julia Roberts,Media,81,93%,Demonstrates strong performance with debate approach in class.,2026-01-15
+STU-1010,Julia Roberts,Media,78,93%,Shows steady effort; observed explains behavior in recent units.,2026-03-20
+STU-1010,Julia Roberts,Drama,92,93%,Demonstrates strong performance with debate approach in class.,2026-01-15
+STU-1010,Julia Roberts,Drama,92,93%,Shows steady effort; observed explains behavior in recent units.,2026-03-20
+STU-1010,Julia Roberts,English,87,93%,Demonstrates strong performance with debate approach in class.,2026-01-15
+STU-1010,Julia Roberts,English,88,93%,Shows steady effort; observed explains behavior in recent units.,2026-03-20
+STU-1010,Julia Roberts,Art,82,93%,Demonstrates strong performance with debate approach in class.,2026-01-15
+STU-1010,Julia Roberts,Art,87,93%,Shows steady effort; observed explains behavior in recent units.,2026-03-20
+STU-1010,Julia Roberts,Business,70,93%,Demonstrates strong performance with debate approach in class.,2026-01-15
+STU-1010,Julia Roberts,Business,76,93%,Shows steady effort; observed explains behavior in recent units.,2026-03-20
+STU-1011,Kevin Bacon,Art,67,79%,Demonstrates strong performance with creative approach in class.,2026-01-15
+STU-1011,Kevin Bacon,Art,65,79%,Shows steady effort; observed performance behavior in recent units.,2026-03-20
+STU-1011,Kevin Bacon,Music,83,79%,Demonstrates strong performance with creative approach in class.,2026-01-15
+STU-1011,Kevin Bacon,Music,88,79%,Shows steady effort; observed performance behavior in recent units.,2026-03-20
+STU-1011,Kevin Bacon,Drama,85,79%,Demonstrates strong performance with creative approach in class.,2026-01-15
+STU-1011,Kevin Bacon,Drama,82,79%,Shows steady effort; observed performance behavior in recent units.,2026-03-20
+STU-1011,Kevin Bacon,English,66,79%,Demonstrates strong performance with creative approach in class.,2026-01-15
+STU-1011,Kevin Bacon,English,62,79%,Shows steady effort; observed performance behavior in recent units.,2026-03-20
+STU-1011,Kevin Bacon,History,73,79%,Demonstrates strong performance with creative approach in class.,2026-01-15
+STU-1011,Kevin Bacon,History,68,79%,Shows steady effort; observed performance behavior in recent units.,2026-03-20
+STU-1011,Kevin Bacon,Media,83,79%,Demonstrates strong performance with creative approach in class.,2026-01-15
+STU-1011,Kevin Bacon,Media,88,79%,Shows steady effort; observed performance behavior in recent units.,2026-03-20
+STU-1011,Kevin Bacon,Design,75,79%,Demonstrates strong performance with creative approach in class.,2026-01-15
+STU-1011,Kevin Bacon,Design,80,79%,Shows steady effort; observed performance behavior in recent units.,2026-03-20
+STU-1012,Laura Croft,History,83,93%,Demonstrates strong performance with hands-on approach in class.,2026-01-15
+STU-1012,Laura Croft,History,86,93%,Shows steady effort; observed field work behavior in recent units.,2026-03-20
+STU-1012,Laura Croft,Biology,78,93%,Demonstrates strong performance with hands-on approach in class.,2026-01-15
+STU-1012,Laura Croft,Biology,75,93%,Shows steady effort; observed field work behavior in recent units.,2026-03-20
+STU-1012,Laura Croft,Physical Ed,98,93%,Demonstrates strong performance with hands-on approach in class.,2026-01-15
+STU-1012,Laura Croft,Physical Ed,100,93%,Shows steady effort; observed field work behavior in recent units.,2026-03-20
+STU-1012,Laura Croft,Geography,89,93%,Demonstrates strong performance with hands-on approach in class.,2026-01-15
+STU-1012,Laura Croft,Geography,88,93%,Shows steady effort; observed field work behavior in recent units.,2026-03-20
+STU-1012,Laura Croft,Chemistry,74,93%,Demonstrates strong performance with hands-on approach in class.,2026-01-15
+STU-1012,Laura Croft,Chemistry,80,93%,Shows steady effort; observed field work behavior in recent units.,2026-03-20
+STU-1012,Laura Croft,English,80,93%,Demonstrates strong performance with hands-on approach in class.,2026-01-15
+STU-1012,Laura Croft,English,78,93%,Shows steady effort; observed field work behavior in recent units.,2026-03-20
+STU-1012,Laura Croft,Math,70,93%,Demonstrates strong performance with hands-on approach in class.,2026-01-15
+STU-1012,Laura Croft,Math,68,93%,Shows steady effort; observed field work behavior in recent units.,2026-03-20
+STU-1013,Michael Scott,Business,65,86%,Demonstrates strong performance with discussion approach in class.,2026-01-15
+STU-1013,Michael Scott,Business,72,86%,Shows steady effort; observed needs support behavior in recent units.,2026-03-20
+STU-1013,Michael Scott,Economics,54,86%,Demonstrates strong performance with discussion approach in class.,2026-01-15
+STU-1013,Michael Scott,Economics,52,86%,Shows steady effort; observed needs support behavior in recent units.,2026-03-20
+STU-1013,Michael Scott,Marketing,68,86%,Demonstrates strong performance with discussion approach in class.,2026-01-15
+STU-1013,Michael Scott,Marketing,72,86%,Shows steady effort; observed needs support behavior in recent units.,2026-03-20
+STU-1013,Michael Scott,Math,51,86%,Demonstrates strong performance with discussion approach in class.,2026-01-15
+STU-1013,Michael Scott,Math,57,86%,Shows steady effort; observed needs support behavior in recent units.,2026-03-20
+STU-1013,Michael Scott,English,65,86%,Demonstrates strong performance with discussion approach in class.,2026-01-15
+STU-1013,Michael Scott,English,67,86%,Shows steady effort; observed needs support behavior in recent units.,2026-03-20
+STU-1013,Michael Scott,Accounting,51,86%,Demonstrates strong performance with discussion approach in class.,2026-01-15
+STU-1013,Michael Scott,Accounting,50,86%,Shows steady effort; observed needs support behavior in recent units.,2026-03-20
+STU-1013,Michael Scott,History,59,86%,Demonstrates strong performance with discussion approach in class.,2026-01-15
+STU-1013,Michael Scott,History,54,86%,Shows steady effort; observed needs support behavior in recent units.,2026-03-20
+STU-1014,Nina Williams,Computer Science,91,96%,Demonstrates strong performance with project approach in class.,2026-01-15
+STU-1014,Nina Williams,Computer Science,95,96%,Shows steady effort; observed build behavior in recent units.,2026-03-20
+STU-1014,Nina Williams,Coding,88,96%,Demonstrates strong performance with project approach in class.,2026-01-15
+STU-1014,Nina Williams,Coding,83,96%,Shows steady effort; observed build behavior in recent units.,2026-03-20
+STU-1014,Nina Williams,Math,82,96%,Demonstrates strong performance with project approach in class.,2026-01-15
+STU-1014,Nina Williams,Math,84,96%,Shows steady effort; observed build behavior in recent units.,2026-03-20
+STU-1014,Nina Williams,Physics,84,96%,Demonstrates strong performance with project approach in class.,2026-01-15
+STU-1014,Nina Williams,Physics,91,96%,Shows steady effort; observed build behavior in recent units.,2026-03-20
+STU-1014,Nina Williams,Chemistry,76,96%,Demonstrates strong performance with project approach in class.,2026-01-15
+STU-1014,Nina Williams,Chemistry,78,96%,Shows steady effort; observed build behavior in recent units.,2026-03-20
+STU-1014,Nina Williams,Technology,86,96%,Demonstrates strong performance with project approach in class.,2026-01-15
+STU-1014,Nina Williams,Technology,81,96%,Shows steady effort; observed build behavior in recent units.,2026-03-20
+STU-1014,Nina Williams,English,72,96%,Demonstrates strong performance with project approach in class.,2026-01-15
+STU-1014,Nina Williams,English,76,96%,Shows steady effort; observed build behavior in recent units.,2026-03-20
+STU-1015,Oscar Martinez,Accounting,91,92%,Demonstrates strong performance with data literacy approach in class.,2026-01-15
+STU-1015,Oscar Martinez,Accounting,97,92%,Shows steady effort; observed independent behavior in recent units.,2026-03-20
+STU-1015,Oscar Martinez,Economics,89,92%,Demonstrates strong performance with data literacy approach in class.,2026-01-15
+STU-1015,Oscar Martinez,Economics,93,92%,Shows steady effort; observed independent behavior in recent units.,2026-03-20
+STU-1015,Oscar Martinez,Math,93,92%,Demonstrates strong performance with data literacy approach in class.,2026-01-15
+STU-1015,Oscar Martinez,Math,93,92%,Shows steady effort; observed independent behavior in recent units.,2026-03-20
+STU-1015,Oscar Martinez,Statistics,85,92%,Demonstrates strong performance with data literacy approach in class.,2026-01-15
+STU-1015,Oscar Martinez,Statistics,82,92%,Shows steady effort; observed independent behavior in recent units.,2026-03-20
+STU-1015,Oscar Martinez,Business,88,92%,Demonstrates strong performance with data literacy approach in class.,2026-01-15
+STU-1015,Oscar Martinez,Business,94,92%,Shows steady effort; observed independent behavior in recent units.,2026-03-20
+STU-1015,Oscar Martinez,English,84,92%,Demonstrates strong performance with data literacy approach in class.,2026-01-15
+STU-1015,Oscar Martinez,English,80,92%,Shows steady effort; observed independent behavior in recent units.,2026-03-20
+STU-1015,Oscar Martinez,Computer Science,78,92%,Demonstrates strong performance with data literacy approach in class.,2026-01-15
+STU-1015,Oscar Martinez,Computer Science,73,92%,Shows steady effort; observed independent behavior in recent units.,2026-03-20
+STU-1016,Penelope Cruz,Drama,91,79%,Demonstrates strong performance with presentation approach in class.,2026-01-15
+STU-1016,Penelope Cruz,Drama,89,79%,Shows steady effort; observed group behavior in recent units.,2026-03-20
+STU-1016,Penelope Cruz,Media,82,79%,Demonstrates strong performance with presentation approach in class.,2026-01-15
+STU-1016,Penelope Cruz,Media,80,79%,Shows steady effort; observed group behavior in recent units.,2026-03-20
+STU-1016,Penelope Cruz,Art,81,79%,Demonstrates strong performance with presentation approach in class.,2026-01-15
+STU-1016,Penelope Cruz,Art,86,79%,Shows steady effort; observed group behavior in recent units.,2026-03-20
+STU-1016,Penelope Cruz,English,76,79%,Demonstrates strong performance with presentation approach in class.,2026-01-15
+STU-1016,Penelope Cruz,English,73,79%,Shows steady effort; observed group behavior in recent units.,2026-03-20
+STU-1016,Penelope Cruz,Literature,83,79%,Demonstrates strong performance with presentation approach in class.,2026-01-15
+STU-1016,Penelope Cruz,Literature,85,79%,Shows steady effort; observed group behavior in recent units.,2026-03-20
+STU-1016,Penelope Cruz,History,78,79%,Demonstrates strong performance with presentation approach in class.,2026-01-15
+STU-1016,Penelope Cruz,History,73,79%,Shows steady effort; observed group behavior in recent units.,2026-03-20
+STU-1016,Penelope Cruz,Music,87,79%,Demonstrates strong performance with presentation approach in class.,2026-01-15
+STU-1016,Penelope Cruz,Music,90,79%,Shows steady effort; observed group behavior in recent units.,2026-03-20
+STU-1017,Quentin Tarantino,Media,91,94%,Demonstrates strong performance with visual approach in class.,2026-01-15
+STU-1017,Quentin Tarantino,Media,87,94%,Shows steady effort; observed creative behavior in recent units.,2026-03-20
+STU-1017,Quentin Tarantino,English,84,94%,Demonstrates strong performance with visual approach in class.,2026-01-15
+STU-1017,Quentin Tarantino,English,84,94%,Shows steady effort; observed creative behavior in recent units.,2026-03-20
+STU-1017,Quentin Tarantino,History,78,94%,Demonstrates strong performance with visual approach in class.,2026-01-15
+STU-1017,Quentin Tarantino,History,82,94%,Shows steady effort; observed creative behavior in recent units.,2026-03-20
+STU-1017,Quentin Tarantino,Art,88,94%,Demonstrates strong performance with visual approach in class.,2026-01-15
+STU-1017,Quentin Tarantino,Art,85,94%,Shows steady effort; observed creative behavior in recent units.,2026-03-20
+STU-1017,Quentin Tarantino,Drama,87,94%,Demonstrates strong performance with visual approach in class.,2026-01-15
+STU-1017,Quentin Tarantino,Drama,83,94%,Shows steady effort; observed creative behavior in recent units.,2026-03-20
+STU-1017,Quentin Tarantino,Literature,82,94%,Demonstrates strong performance with visual approach in class.,2026-01-15
+STU-1017,Quentin Tarantino,Literature,84,94%,Shows steady effort; observed creative behavior in recent units.,2026-03-20
+STU-1017,Quentin Tarantino,Music,75,94%,Demonstrates strong performance with visual approach in class.,2026-01-15
+STU-1017,Quentin Tarantino,Music,74,94%,Shows steady effort; observed creative behavior in recent units.,2026-03-20
+STU-1018,Rachel Green,Business,76,84%,Demonstrates strong performance with team approach in class.,2026-01-15
+STU-1018,Rachel Green,Business,82,84%,Shows steady effort; observed collaborative behavior in recent units.,2026-03-20
+STU-1018,Rachel Green,Design,78,84%,Demonstrates strong performance with team approach in class.,2026-01-15
+STU-1018,Rachel Green,Design,74,84%,Shows steady effort; observed collaborative behavior in recent units.,2026-03-20
+STU-1018,Rachel Green,Marketing,80,84%,Demonstrates strong performance with team approach in class.,2026-01-15
+STU-1018,Rachel Green,Marketing,85,84%,Shows steady effort; observed collaborative behavior in recent units.,2026-03-20
+STU-1018,Rachel Green,English,71,84%,Demonstrates strong performance with team approach in class.,2026-01-15
+STU-1018,Rachel Green,English,67,84%,Shows steady effort; observed collaborative behavior in recent units.,2026-03-20
+STU-1018,Rachel Green,Art,84,84%,Demonstrates strong performance with team approach in class.,2026-01-15
+STU-1018,Rachel Green,Art,83,84%,Shows steady effort; observed collaborative behavior in recent units.,2026-03-20
+STU-1018,Rachel Green,Media,78,84%,Demonstrates strong performance with team approach in class.,2026-01-15
+STU-1018,Rachel Green,Media,75,84%,Shows steady effort; observed collaborative behavior in recent units.,2026-03-20
+STU-1018,Rachel Green,Economics,74,84%,Demonstrates strong performance with team approach in class.,2026-01-15
+STU-1018,Rachel Green,Economics,79,84%,Shows steady effort; observed collaborative behavior in recent units.,2026-03-20
+STU-1019,Steve Rogers,History,87,89%,Demonstrates strong performance with motivated approach in class.,2026-01-15
+STU-1019,Steve Rogers,History,84,89%,Shows steady effort; observed leader behavior in recent units.,2026-03-20
+STU-1019,Steve Rogers,Physical Ed,93,89%,Demonstrates strong performance with motivated approach in class.,2026-01-15
+STU-1019,Steve Rogers,Physical Ed,99,89%,Shows steady effort; observed leader behavior in recent units.,2026-03-20
+STU-1019,Steve Rogers,English,74,89%,Demonstrates strong performance with motivated approach in class.,2026-01-15
+STU-1019,Steve Rogers,English,72,89%,Shows steady effort; observed leader behavior in recent units.,2026-03-20
+STU-1019,Steve Rogers,Math,68,89%,Demonstrates strong performance with motivated approach in class.,2026-01-15
+STU-1019,Steve Rogers,Math,69,89%,Shows steady effort; observed leader behavior in recent units.,2026-03-20
+STU-1019,Steve Rogers,Physics,71,89%,Demonstrates strong performance with motivated approach in class.,2026-01-15
+STU-1019,Steve Rogers,Physics,73,89%,Shows steady effort; observed leader behavior in recent units.,2026-03-20
+STU-1019,Steve Rogers,Biology,74,89%,Demonstrates strong performance with motivated approach in class.,2026-01-15
+STU-1019,Steve Rogers,Biology,72,89%,Shows steady effort; observed leader behavior in recent units.,2026-03-20
+STU-1019,Steve Rogers,Government,90,89%,Demonstrates strong performance with motivated approach in class.,2026-01-15
+STU-1019,Steve Rogers,Government,87,89%,Shows steady effort; observed leader behavior in recent units.,2026-03-20
+STU-1020,Tony Stark,Physics,97,91%,Demonstrates strong performance with build approach in class.,2026-01-15
+STU-1020,Tony Stark,Physics,99,91%,Shows steady effort; observed experiment behavior in recent units.,2026-03-20
+STU-1020,Tony Stark,Technology,100,91%,Demonstrates strong performance with build approach in class.,2026-01-15
+STU-1020,Tony Stark,Technology,100,91%,Shows steady effort; observed experiment behavior in recent units.,2026-03-20
+STU-1020,Tony Stark,Math,95,91%,Demonstrates strong performance with build approach in class.,2026-01-15
+STU-1020,Tony Stark,Math,94,91%,Shows steady effort; observed experiment behavior in recent units.,2026-03-20
+STU-1020,Tony Stark,Coding,91,91%,Demonstrates strong performance with build approach in class.,2026-01-15
+STU-1020,Tony Stark,Coding,98,91%,Shows steady effort; observed experiment behavior in recent units.,2026-03-20
+STU-1020,Tony Stark,Computer Science,96,91%,Demonstrates strong performance with build approach in class.,2026-01-15
+STU-1020,Tony Stark,Computer Science,96,91%,Shows steady effort; observed experiment behavior in recent units.,2026-03-20
+STU-1020,Tony Stark,Chemistry,88,91%,Demonstrates strong performance with build approach in class.,2026-01-15
+STU-1020,Tony Stark,Chemistry,86,91%,Shows steady effort; observed experiment behavior in recent units.,2026-03-20
+STU-1020,Tony Stark,Engineering,98,91%,Demonstrates strong performance with build approach in class.,2026-01-15
+STU-1020,Tony Stark,Engineering,100,91%,Shows steady effort; observed experiment behavior in recent units.,2026-03-20

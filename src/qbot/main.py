@@ -46,7 +46,7 @@ CAREER_PATHS = (
 	{"keywords": ("art", "design", "music", "drama", "media"), "skills": ["creative practice", "portfolio development", "iterative design"], "careers": ["design", "media production", "performing arts"]},
 	{"keywords": ("computing", "computer", "technology", "coding", "ict"), "skills": ["computational thinking", "programming", "digital problem solving"], "careers": ["software development", "cybersecurity", "IT"]},
 	{"keywords": ("business", "economics", "accounting"), "skills": ["financial literacy", "analysis", "planning"], "careers": ["business", "finance", "entrepreneurship"]},
-}
+)
 
 
 def _normalise(value: Any) -> str:

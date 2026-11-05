@@ -1,0 +1,81 @@
+[
+  {
+    "profile": {
+      "student_id": "STU-1001",
+      "student_name": "Alex Chen",
+      "subject_averages": {
+        "Mathematics": 91.0,
+        "Physics": 85.5,
+        "Computer Science": 94.0,
+        "Chemistry": 85.5,
+        "Biology": 79.5,
+        "History": 62.0,
+        "English": 55.0
+      },
+      "strongest_subjects": [
+        "Computer Science",
+        "Mathematics",
+        "Physics"
+      ],
+      "focus_subjects": [
+        "English"
+      ],
+      "performance_trends": {
+        "Mathematics": "improving",
+        "Physics": "improving",
+        "Computer Science": "stable",
+        "Chemistry": "stable",
+        "Biology": "stable",
+        "History": "stable",
+        "English": "declining"
+      },
+      "attendance_average": 90.5,
+      "attendance_note": "Attendance appears consistent",
+      "observation_signals": [
+        "collaborative",
+        "hands_on",
+        "visual",
+        "independent",
+        "verbal_or_discussion",
+        "needs_support",
+        "engagement_or_curiosity"
+      ],
+      "evidence": [
+        "14 record(s) analysed"
+      ]
+    },
+    "recommendations": {
+      "focus_subjects": [
+        "English"
+      ],
+      "skills_to_build": [
+        "quantitative reasoning",
+        "data literacy",
+        "problem solving",
+        "scientific investigation",
+        "careful observation",
+        "research literacy",
+        "computational thinking",
+        "programming",
+        "digital problem solving"
+      ],
+      "possible_related_career_areas": [
+        "engineering",
+        "data analysis",
+        "actuarial science",
+        "health sciences",
+        "biomedical research",
+        "environmental science",
+        "software development",
+        "cybersecurity",
+        "IT"
+      ],
+      "suggested_actions": [
+        "Set a short-term learning goal and review progress in English.",
+        "Consider structured peer-learning opportunities, based on teacher observations.",
+        "Consider practical or project-based practice, based on teacher observations."
+      ],
+      "rationale": "Career areas are broad possibilities linked to current stronger subjects, not predicted outcomes."
+    }
+  }
+]

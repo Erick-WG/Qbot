@@ -1,0 +1,1252 @@
+[
+  {
+    "profile": {
+      "student_id": "STU-1001",
+      "student_name": "Alex Chen",
+      "subject_averages": {
+        "Mathematics": 88.5,
+        "Physics": 94.0,
+        "Computer Science": 93.5,
+        "English": 56.0,
+        "Chemistry": 82.5,
+        "Biology": 86.0,
+        "History": 61.0
+      },
+      "strongest_subjects": [
+        "Physics",
+        "Computer Science",
+        "Mathematics"
+      ],
+      "focus_subjects": [
+        "English"
+      ],
+      "performance_trends": {
+        "Mathematics": "stable",
+        "Physics": "stable",
+        "Computer Science": "improving",
+        "English": "stable",
+        "Chemistry": "stable",
+        "Biology": "improving",
+        "History": "stable"
+      },
+      "attendance_average": 90.0,
+      "attendance_note": "Attendance appears consistent",
+      "observation_signals": [
+        "collaborative",
+        "hands_on"
+      ],
+      "evidence": [
+        "14 record(s) analysed"
+      ]
+    },
+    "recommendations": {
+      "focus_subjects": [
+        "English"
+      ],
+      "skills_to_build": [
+        "quantitative reasoning",
+        "data literacy",
+        "problem solving",
+        "scientific investigation",
+        "careful observation",
+        "research literacy",
+        "computational thinking",
+        "programming",
+        "digital problem solving"
+      ],
+      "possible_related_career_areas": [
+        "engineering",
+        "data analysis",
+        "actuarial science",
+        "health sciences",
+        "biomedical research",
+        "environmental science",
+        "software development",
+        "cybersecurity",
+        "IT"
+      ],
+      "suggested_actions": [
+        "Set a short-term learning goal and review progress in English.",
+        "Consider structured peer-learning opportunities, based on teacher observations.",
+        "Consider practical or project-based practice, based on teacher observations."
+      ],
+      "rationale": "Career areas are broad possibilities linked to current stronger subjects, not predicted outcomes."
+    }
+  },
+  {
+    "profile": {
+      "student_id": "STU-1002",
+      "student_name": "Bella Gomez",
+      "subject_averages": {
+        "Biology": 87.5,
+        "Chemistry": 83.5,
+        "Health": 92.0,
+        "Math": 72.0,
+        "Physics": 84.5,
+        "English": 85.0,
+        "Art": 92.5
+      },
+      "strongest_subjects": [
+        "Art",
+        "Health",
+        "Biology"
+      ],
+      "focus_subjects": [],
+      "performance_trends": {
+        "Biology": "stable",
+        "Chemistry": "stable",
+        "Health": "stable",
+        "Math": "stable",
+        "Physics": "improving",
+        "English": "stable",
+        "Art": "stable"
+      },
+      "attendance_average": 86.0,
+      "attendance_note": "Attendance appears consistent",
+      "observation_signals": [
+        "visual",
+        "engagement_or_curiosity"
+      ],
+      "evidence": [
+        "14 record(s) analysed"
+      ]
+    },
+    "recommendations": {
+      "focus_subjects": [
+        "Art"
+      ],
+      "skills_to_build": [
+        "scientific investigation",
+        "careful observation",
+        "research literacy",
+        "creative practice",
+        "portfolio development",
+        "iterative design"
+      ],
+      "possible_related_career_areas": [
+        "health sciences",
+        "biomedical research",
+        "environmental science",
+        "design",
+        "media production",
+        "performing arts"
+      ],
+      "suggested_actions": [
+        "Set a short-term learning goal and review progress in Art."
+      ],
+      "rationale": "Career areas are broad possibilities linked to current stronger subjects, not predicted outcomes."
+    }
+  },
+  {
+    "profile": {
+      "student_id": "STU-1003",
+      "student_name": "Charlie Davis",
+      "subject_averages": {
+        "English": 82.5,
+        "History": 90.5,
+        "Literature": 89.0,
+        "Art": 81.5,
+        "Drama": 80.5,
+        "Media": 85.0,
+        "Business": 70.0
+      },
+      "strongest_subjects": [
+        "History",
+        "Literature",
+        "Media"
+      ],
+      "focus_subjects": [],
+      "performance_trends": {
+        "English": "stable",
+        "History": "stable",
+        "Literature": "stable",
+        "Art": "improving",
+        "Drama": "stable",
+        "Media": "stable",
+        "Business": "stable"
+      },
+      "attendance_average": 78.0,
+      "attendance_note": "Low attendance",
+      "observation_signals": [
+        "verbal_or_discussion"
+      ],
+      "evidence": [
+        "14 record(s) analysed"
+      ]
+    },
+    "recommendations": {
+      "focus_subjects": [
+        "History"
+      ],
+      "skills_to_build": [
+        "writing",
+        "critical reading",
+        "research and communication",
+        "creative practice",
+        "portfolio development",
+        "iterative design"
+      ],
+      "possible_related_career_areas": [
+        "communications",
+        "law-related study",
+        "education",
+        "public policy",
+        "design",
+        "media production",
+        "performing arts"
+      ],
+      "suggested_actions": [
+        "Set a short-term learning goal and review progress in History.",
+        "Discuss attendance barriers and supportive next steps with the student and school."
+      ],
+      "rationale": "Career areas are broad possibilities linked to current stronger subjects, not predicted outcomes."
+    }
+  },
+  {
+    "profile": {
+      "student_id": "STU-1004",
+      "student_name": "Diana Prince",
+      "subject_averages": {
+        "Art": 94.5,
+        "Design": 92.0,
+        "Media": 85.0,
+        "Computer Science": 61.0,
+        "English": 73.5,
+        "Math": 70.0,
+        "History": 77.5
+      },
+      "strongest_subjects": [
+        "Art",
+        "Design",
+        "Media"
+      ],
+      "focus_subjects": [],
+      "performance_trends": {
+        "Art": "declining",
+        "Design": "stable",
+        "Media": "stable",
+        "Computer Science": "stable",
+        "English": "declining",
+        "Math": "stable",
+        "History": "declining"
+      },
+      "attendance_average": 84.0,
+      "attendance_note": "Low attendance",
+      "observation_signals": [
+        "visual"
+      ],
+      "evidence": [
+        "14 record(s) analysed"
+      ]
+    },
+    "recommendations": {
+      "focus_subjects": [
+        "Art"
+      ],
+      "skills_to_build": [
+        "creative practice",
+        "portfolio development",
+        "iterative design"
+      ],
+      "possible_related_career_areas": [
+        "design",
+        "media production",
+        "performing arts"
+      ],
+      "suggested_actions": [
+        "Set a short-term learning goal and review progress in Art.",
+        "Discuss attendance barriers and supportive next steps with the student and school."
+      ],
+      "rationale": "Career areas are broad possibilities linked to current stronger subjects, not predicted outcomes."
+    }
+  },
+  {
+    "profile": {
+      "student_id": "STU-1005",
+      "student_name": "Ethan Hunt",
+      "subject_averages": {
+        "Computer Science": 89.5,
+        "Technology": 96.5,
+        "Math": 83.5,
+        "Physics": 83.5,
+        "Chemistry": 89.5,
+        "Coding": 98.5,
+        "English": 60.5
+      },
+      "strongest_subjects": [
+        "Coding",
+        "Technology",
+        "Computer Science"
+      ],
+      "focus_subjects": [],
+      "performance_trends": {
+        "Computer Science": "stable",
+        "Technology": "improving",
+        "Math": "stable",
+        "Physics": "improving",
+        "Chemistry": "stable",
+        "Coding": "stable",
+        "English": "stable"
+      },
+      "attendance_average": 85.0,
+      "attendance_note": "Attendance appears consistent",
+      "observation_signals": [
+        "hands_on"
+      ],
+      "evidence": [
+        "14 record(s) analysed"
+      ]
+    },
+    "recommendations": {
+      "focus_subjects": [
+        "Coding"
+      ],
+      "skills_to_build": [
+        "scientific investigation",
+        "careful observation",
+        "research literacy",
+        "computational thinking",
+        "programming",
+        "digital problem solving"
+      ],
+      "possible_related_career_areas": [
+        "health sciences",
+        "biomedical research",
+        "environmental science",
+        "software development",
+        "cybersecurity",
+        "IT"
+      ],
+      "suggested_actions": [
+        "Set a short-term learning goal and review progress in Coding.",
+        "Consider practical or project-based practice, based on teacher observations."
+      ],
+      "rationale": "Career areas are broad possibilities linked to current stronger subjects, not predicted outcomes."
+    }
+  },
+  {
+    "profile": {
+      "student_id": "STU-1006",
+      "student_name": "Fiona Gallagher",
+      "subject_averages": {
+        "Business": 83.0,
+        "Economics": 78.5,
+        "Accounting": 93.5,
+        "Math": 71.0,
+        "English": 81.5,
+        "History": 68.5,
+        "Statistics": 83.5
+      },
+      "strongest_subjects": [
+        "Accounting",
+        "Statistics",
+        "Business"
+      ],
+      "focus_subjects": [],
+      "performance_trends": {
+        "Business": "stable",
+        "Economics": "declining",
+        "Accounting": "stable",
+        "Math": "stable",
+        "English": "improving",
+        "History": "improving",
+        "Statistics": "improving"
+      },
+      "attendance_average": 94.0,
+      "attendance_note": "Attendance appears consistent",
+      "observation_signals": [
+        "collaborative"
+      ],
+      "evidence": [
+        "14 record(s) analysed"
+      ]
+    },
+    "recommendations": {
+      "focus_subjects": [
+        "Accounting"
+      ],
+      "skills_to_build": [
+        "quantitative reasoning",
+        "data literacy",
+        "problem solving",
+        "financial literacy",
+        "analysis",
+        "planning"
+      ],
+      "possible_related_career_areas": [
+        "engineering",
+        "data analysis",
+        "actuarial science",
+        "business",
+        "finance",
+        "entrepreneurship"
+      ],
+      "suggested_actions": [
+        "Set a short-term learning goal and review progress in Accounting.",
+        "Consider structured peer-learning opportunities, based on teacher observations."
+      ],
+      "rationale": "Career areas are broad possibilities linked to current stronger subjects, not predicted outcomes."
+    }
+  },
+  {
+    "profile": {
+      "student_id": "STU-1007",
+      "student_name": "George Clark",
+      "subject_averages": {
+        "Math": 56.5,
+        "Physics": 47.5,
+        "English": 60.0,
+        "History": 58.0,
+        "Chemistry": 47.5,
+        "Biology": 56.0,
+        "Art": 67.0
+      },
+      "strongest_subjects": [],
+      "focus_subjects": [
+        "Physics",
+        "Chemistry",
+        "Biology"
+      ],
+      "performance_trends": {
+        "Math": "stable",
+        "Physics": "stable",
+        "English": "stable",
+        "History": "stable",
+        "Chemistry": "stable",
+        "Biology": "stable",
+        "Art": "stable"
+      },
+      "attendance_average": 78.0,
+      "attendance_note": "Low attendance",
+      "observation_signals": [
+        "needs_support"
+      ],
+      "evidence": [
+        "14 record(s) analysed"
+      ]
+    },
+    "recommendations": {
+      "focus_subjects": [
+        "Physics",
+        "Chemistry",
+        "Biology"
+      ],
+      "skills_to_build": [],
+      "possible_related_career_areas": [],
+      "suggested_actions": [
+        "Set a short-term learning goal and review progress in Physics.",
+        "Set a short-term learning goal and review progress in Chemistry.",
+        "Set a short-term learning goal and review progress in Biology.",
+        "Discuss attendance barriers and supportive next steps with the student and school."
+      ],
+      "rationale": "Career areas are broad possibilities linked to current stronger subjects, not predicted outcomes."
+    }
+  },
+  {
+    "profile": {
+      "student_id": "STU-1008",
+      "student_name": "Hannah Abbott",
+      "subject_averages": {
+        "Biology": 74.0,
+        "Chemistry": 76.5,
+        "Math": 83.0,
+        "English": 79.5,
+        "Health": 86.5,
+        "Physics": 72.0,
+        "History": 75.5
+      },
+      "strongest_subjects": [
+        "Health",
+        "Math",
+        "English"
+      ],
+      "focus_subjects": [],
+      "performance_trends": {
+        "Biology": "stable",
+        "Chemistry": "stable",
+        "Math": "stable",
+        "English": "stable",
+        "Health": "stable",
+        "Physics": "stable",
+        "History": "stable"
+      },
+      "attendance_average": 80.0,
+      "attendance_note": "Low attendance",
+      "observation_signals": [
+        "engagement_or_curiosity"
+      ],
+      "evidence": [
+        "14 record(s) analysed"
+      ]
+    },
+    "recommendations": {
+      "focus_subjects": [
+        "Health"
+      ],
+      "skills_to_build": [
+        "quantitative reasoning",
+        "data literacy",
+        "problem solving",
+        "scientific investigation",
+        "careful observation",
+        "research literacy",
+        "writing",
+        "critical reading",
+        "research and communication"
+      ],
+      "possible_related_career_areas": [
+        "engineering",
+        "data analysis",
+        "actuarial science",
+        "health sciences",
+        "biomedical research",
+        "environmental science",
+        "communications",
+        "law-related study",
+        "education",
+        "public policy"
+      ],
+      "suggested_actions": [
+        "Set a short-term learning goal and review progress in Health.",
+        "Discuss attendance barriers and supportive next steps with the student and school."
+      ],
+      "rationale": "Career areas are broad possibilities linked to current stronger subjects, not predicted outcomes."
+    }
+  },
+  {
+    "profile": {
+      "student_id": "STU-1009",
+      "student_name": "Ian Malcolm",
+      "subject_averages": {
+        "Mathematics": 93.5,
+        "Statistics": 93.5,
+        "Physics": 96.0,
+        "Chemistry": 93.5,
+        "Computer Science": 89.5,
+        "Biology": 85.0,
+        "English": 77.0
+      },
+      "strongest_subjects": [
+        "Physics",
+        "Mathematics",
+        "Statistics"
+      ],
+      "focus_subjects": [],
+      "performance_trends": {
+        "Mathematics": "declining",
+        "Statistics": "improving",
+        "Physics": "stable",
+        "Chemistry": "improving",
+        "Computer Science": "improving",
+        "Biology": "stable",
+        "English": "stable"
+      },
+      "attendance_average": 92.0,
+      "attendance_note": "Attendance appears consistent",
+      "observation_signals": [
+        "independent"
+      ],
+      "evidence": [
+        "14 record(s) analysed"
+      ]
+    },
+    "recommendations": {
+      "focus_subjects": [
+        "Physics"
+      ],
+      "skills_to_build": [
+        "quantitative reasoning",
+        "data literacy",
+        "problem solving"
+      ],
+      "possible_related_career_areas": [
+        "engineering",
+        "data analysis",
+        "actuarial science"
+      ],
+      "suggested_actions": [
+        "Set a short-term learning goal and review progress in Physics."
+      ],
+      "rationale": "Career areas are broad possibilities linked to current stronger subjects, not predicted outcomes."
+    }
+  },
+  {
+    "profile": {
+      "student_id": "STU-1010",
+      "student_name": "Julia Roberts",
+      "subject_averages": {
+        "Literature": 88.5,
+        "History": 91.0,
+        "Media": 79.5,
+        "Drama": 92.0,
+        "English": 87.5,
+        "Art": 84.5,
+        "Business": 73.0
+      },
+      "strongest_subjects": [
+        "Drama",
+        "History",
+        "Literature"
+      ],
+      "focus_subjects": [],
+      "performance_trends": {
+        "Literature": "stable",
+        "History": "stable",
+        "Media": "stable",
+        "Drama": "stable",
+        "English": "stable",
+        "Art": "improving",
+        "Business": "improving"
+      },
+      "attendance_average": 93.0,
+      "attendance_note": "Attendance appears consistent",
+      "observation_signals": [
+        "verbal_or_discussion"
+      ],
+      "evidence": [
+        "14 record(s) analysed"
+      ]
+    },
+    "recommendations": {
+      "focus_subjects": [
+        "Drama"
+      ],
+      "skills_to_build": [
+        "writing",
+        "critical reading",
+        "research and communication",
+        "creative practice",
+        "portfolio development",
+        "iterative design"
+      ],
+      "possible_related_career_areas": [
+        "communications",
+        "law-related study",
+        "education",
+        "public policy",
+        "design",
+        "media production",
+        "performing arts"
+      ],
+      "suggested_actions": [
+        "Set a short-term learning goal and review progress in Drama."
+      ],
+      "rationale": "Career areas are broad possibilities linked to current stronger subjects, not predicted outcomes."
+    }
+  },
+  {
+    "profile": {
+      "student_id": "STU-1011",
+      "student_name": "Kevin Bacon",
+      "subject_averages": {
+        "Art": 66.0,
+        "Music": 85.5,
+        "Drama": 83.5,
+        "English": 64.0,
+        "History": 70.5,
+        "Media": 85.5,
+        "Design": 77.5
+      },
+      "strongest_subjects": [
+        "Music",
+        "Media",
+        "Drama"
+      ],
+      "focus_subjects": [],
+      "performance_trends": {
+        "Art": "stable",
+        "Music": "improving",
+        "Drama": "stable",
+        "English": "stable",
+        "History": "declining",
+        "Media": "improving",
+        "Design": "improving"
+      },
+      "attendance_average": 79.0,
+      "attendance_note": "Low attendance",
+      "observation_signals": [],
+      "evidence": [
+        "14 record(s) analysed"
+      ]
+    },
+    "recommendations": {
+      "focus_subjects": [
+        "Music"
+      ],
+      "skills_to_build": [
+        "creative practice",
+        "portfolio development",
+        "iterative design"
+      ],
+      "possible_related_career_areas": [
+        "design",
+        "media production",
+        "performing arts"
+      ],
+      "suggested_actions": [
+        "Set a short-term learning goal and review progress in Music.",
+        "Discuss attendance barriers and supportive next steps with the student and school."
+      ],
+      "rationale": "Career areas are broad possibilities linked to current stronger subjects, not predicted outcomes."
+    }
+  },
+  {
+    "profile": {
+      "student_id": "STU-1012",
+      "student_name": "Laura Croft",
+      "subject_averages": {
+        "History": 84.5,
+        "Biology": 76.5,
+        "Physical Ed": 99.0,
+        "Geography": 88.5,
+        "Chemistry": 77.0,
+        "English": 79.0,
+        "Math": 69.0
+      },
+      "strongest_subjects": [
+        "Physical Ed",
+        "Geography",
+        "History"
+      ],
+      "focus_subjects": [],
+      "performance_trends": {
+        "History": "stable",
+        "Biology": "stable",
+        "Physical Ed": "stable",
+        "Geography": "stable",
+        "Chemistry": "improving",
+        "English": "stable",
+        "Math": "stable"
+      },
+      "attendance_average": 93.0,
+      "attendance_note": "Attendance appears consistent",
+      "observation_signals": [
+        "hands_on"
+      ],
+      "evidence": [
+        "14 record(s) analysed"
+      ]
+    },
+    "recommendations": {
+      "focus_subjects": [
+        "Physical Ed"
+      ],
+      "skills_to_build": [
+        "writing",
+        "critical reading",
+        "research and communication"
+      ],
+      "possible_related_career_areas": [
+        "communications",
+        "law-related study",
+        "education",
+        "public policy"
+      ],
+      "suggested_actions": [
+        "Set a short-term learning goal and review progress in Physical Ed.",
+        "Consider practical or project-based practice, based on teacher observations."
+      ],
+      "rationale": "Career areas are broad possibilities linked to current stronger subjects, not predicted outcomes."
+    }
+  },
+  {
+    "profile": {
+      "student_id": "STU-1013",
+      "student_name": "Michael Scott",
+      "subject_averages": {
+        "Business": 68.5,
+        "Economics": 53.0,
+        "Marketing": 70.0,
+        "Math": 54.0,
+        "English": 66.0,
+        "Accounting": 50.5,
+        "History": 56.5
+      },
+      "strongest_subjects": [
+        "Marketing"
+      ],
+      "focus_subjects": [
+        "Accounting",
+        "Economics",
+        "Math"
+      ],
+      "performance_trends": {
+        "Business": "improving",
+        "Economics": "stable",
+        "Marketing": "stable",
+        "Math": "improving",
+        "English": "stable",
+        "Accounting": "stable",
+        "History": "declining"
+      },
+      "attendance_average": 86.0,
+      "attendance_note": "Attendance appears consistent",
+      "observation_signals": [
+        "verbal_or_discussion",
+        "needs_support"
+      ],
+      "evidence": [
+        "14 record(s) analysed"
+      ]
+    },
+    "recommendations": {
+      "focus_subjects": [
+        "Accounting",
+        "Economics",
+        "Math"
+      ],
+      "skills_to_build": [],
+      "possible_related_career_areas": [],
+      "suggested_actions": [
+        "Set a short-term learning goal and review progress in Accounting.",
+        "Set a short-term learning goal and review progress in Economics.",
+        "Set a short-term learning goal and review progress in Math."
+      ],
+      "rationale": "Career areas are broad possibilities linked to current stronger subjects, not predicted outcomes."
+    }
+  },
+  {
+    "profile": {
+      "student_id": "STU-1014",
+      "student_name": "Nina Williams",
+      "subject_averages": {
+        "Computer Science": 93.0,
+        "Coding": 85.5,
+        "Math": 83.0,
+        "Physics": 87.5,
+        "Chemistry": 77.0,
+        "Technology": 83.5,
+        "English": 74.0
+      },
+      "strongest_subjects": [
+        "Computer Science",
+        "Physics",
+        "Coding"
+      ],
+      "focus_subjects": [],
+      "performance_trends": {
+        "Computer Science": "stable",
+        "Coding": "declining",
+        "Math": "stable",
+        "Physics": "improving",
+        "Chemistry": "stable",
+        "Technology": "declining",
+        "English": "stable"
+      },
+      "attendance_average": 96.0,
+      "attendance_note": "Attendance appears consistent",
+      "observation_signals": [
+        "hands_on"
+      ],
+      "evidence": [
+        "14 record(s) analysed"
+      ]
+    },
+    "recommendations": {
+      "focus_subjects": [
+        "Computer Science"
+      ],
+      "skills_to_build": [
+        "quantitative reasoning",
+        "data literacy",
+        "problem solving",
+        "scientific investigation",
+        "careful observation",
+        "research literacy",
+        "computational thinking",
+        "programming",
+        "digital problem solving"
+      ],
+      "possible_related_career_areas": [
+        "engineering",
+        "data analysis",
+        "actuarial science",
+        "health sciences",
+        "biomedical research",
+        "environmental science",
+        "software development",
+        "cybersecurity",
+        "IT"
+      ],
+      "suggested_actions": [
+        "Set a short-term learning goal and review progress in Computer Science.",
+        "Consider practical or project-based practice, based on teacher observations."
+      ],
+      "rationale": "Career areas are broad possibilities linked to current stronger subjects, not predicted outcomes."
+    }
+  },
+  {
+    "profile": {
+      "student_id": "STU-1015",
+      "student_name": "Oscar Martinez",
+      "subject_averages": {
+        "Accounting": 94.0,
+        "Economics": 91.0,
+        "Math": 93.0,
+        "Statistics": 83.5,
+        "Business": 91.0,
+        "English": 82.0,
+        "Computer Science": 75.5
+      },
+      "strongest_subjects": [
+        "Accounting",
+        "Math",
+        "Economics"
+      ],
+      "focus_subjects": [],
+      "performance_trends": {
+        "Accounting": "improving",
+        "Economics": "stable",
+        "Math": "stable",
+        "Statistics": "stable",
+        "Business": "improving",
+        "English": "stable",
+        "Computer Science": "declining"
+      },
+      "attendance_average": 92.0,
+      "attendance_note": "Attendance appears consistent",
+      "observation_signals": [
+        "independent"
+      ],
+      "evidence": [
+        "14 record(s) analysed"
+      ]
+    },
+    "recommendations": {
+      "focus_subjects": [
+        "Accounting"
+      ],
+      "skills_to_build": [
+        "quantitative reasoning",
+        "data literacy",
+        "problem solving",
+        "financial literacy",
+        "analysis",
+        "planning"
+      ],
+      "possible_related_career_areas": [
+        "engineering",
+        "data analysis",
+        "actuarial science",
+        "business",
+        "finance",
+        "entrepreneurship"
+      ],
+      "suggested_actions": [
+        "Set a short-term learning goal and review progress in Accounting."
+      ],
+      "rationale": "Career areas are broad possibilities linked to current stronger subjects, not predicted outcomes."
+    }
+  },
+  {
+    "profile": {
+      "student_id": "STU-1016",
+      "student_name": "Penelope Cruz",
+      "subject_averages": {
+        "Drama": 90.0,
+        "Media": 81.0,
+        "Art": 83.5,
+        "English": 74.5,
+        "Literature": 84.0,
+        "History": 75.5,
+        "Music": 88.5
+      },
+      "strongest_subjects": [
+        "Drama",
+        "Music",
+        "Literature"
+      ],
+      "focus_subjects": [],
+      "performance_trends": {
+        "Drama": "stable",
+        "Media": "stable",
+        "Art": "improving",
+        "English": "stable",
+        "Literature": "stable",
+        "History": "declining",
+        "Music": "stable"
+      },
+      "attendance_average": 79.0,
+      "attendance_note": "Low attendance",
+      "observation_signals": [
+        "collaborative",
+        "verbal_or_discussion"
+      ],
+      "evidence": [
+        "14 record(s) analysed"
+      ]
+    },
+    "recommendations": {
+      "focus_subjects": [
+        "Drama"
+      ],
+      "skills_to_build": [
+        "writing",
+        "critical reading",
+        "research and communication",
+        "creative practice",
+        "portfolio development",
+        "iterative design"
+      ],
+      "possible_related_career_areas": [
+        "communications",
+        "law-related study",
+        "education",
+        "public policy",
+        "design",
+        "media production",
+        "performing arts"
+      ],
+      "suggested_actions": [
+        "Set a short-term learning goal and review progress in Drama.",
+        "Discuss attendance barriers and supportive next steps with the student and school.",
+        "Consider structured peer-learning opportunities, based on teacher observations."
+      ],
+      "rationale": "Career areas are broad possibilities linked to current stronger subjects, not predicted outcomes."
+    }
+  },
+  {
+    "profile": {
+      "student_id": "STU-1017",
+      "student_name": "Quentin Tarantino",
+      "subject_averages": {
+        "Media": 89.0,
+        "English": 84.0,
+        "History": 80.0,
+        "Art": 86.5,
+        "Drama": 85.0,
+        "Literature": 83.0,
+        "Music": 74.5
+      },
+      "strongest_subjects": [
+        "Media",
+        "Art",
+        "Drama"
+      ],
+      "focus_subjects": [],
+      "performance_trends": {
+        "Media": "stable",
+        "English": "stable",
+        "History": "stable",
+        "Art": "stable",
+        "Drama": "stable",
+        "Literature": "stable",
+        "Music": "stable"
+      },
+      "attendance_average": 94.0,
+      "attendance_note": "Attendance appears consistent",
+      "observation_signals": [
+        "visual"
+      ],
+      "evidence": [
+        "14 record(s) analysed"
+      ]
+    },
+    "recommendations": {
+      "focus_subjects": [
+        "Media"
+      ],
+      "skills_to_build": [
+        "creative practice",
+        "portfolio development",
+        "iterative design"
+      ],
+      "possible_related_career_areas": [
+        "design",
+        "media production",
+        "performing arts"
+      ],
+      "suggested_actions": [
+        "Set a short-term learning goal and review progress in Media."
+      ],
+      "rationale": "Career areas are broad possibilities linked to current stronger subjects, not predicted outcomes."
+    }
+  },
+  {
+    "profile": {
+      "student_id": "STU-1018",
+      "student_name": "Rachel Green",
+      "subject_averages": {
+        "Business": 79.0,
+        "Design": 76.0,
+        "Marketing": 82.5,
+        "English": 69.0,
+        "Art": 83.5,
+        "Media": 76.5,
+        "Economics": 76.5
+      },
+      "strongest_subjects": [
+        "Art",
+        "Marketing",
+        "Business"
+      ],
+      "focus_subjects": [],
+      "performance_trends": {
+        "Business": "improving",
+        "Design": "stable",
+        "Marketing": "improving",
+        "English": "stable",
+        "Art": "stable",
+        "Media": "stable",
+        "Economics": "improving"
+      },
+      "attendance_average": 84.0,
+      "attendance_note": "Low attendance",
+      "observation_signals": [
+        "collaborative"
+      ],
+      "evidence": [
+        "14 record(s) analysed"
+      ]
+    },
+    "recommendations": {
+      "focus_subjects": [
+        "Art"
+      ],
+      "skills_to_build": [
+        "creative practice",
+        "portfolio development",
+        "iterative design",
+        "financial literacy",
+        "analysis",
+        "planning"
+      ],
+      "possible_related_career_areas": [
+        "design",
+        "media production",
+        "performing arts",
+        "business",
+        "finance",
+        "entrepreneurship"
+      ],
+      "suggested_actions": [
+        "Set a short-term learning goal and review progress in Art.",
+        "Discuss attendance barriers and supportive next steps with the student and school.",
+        "Consider structured peer-learning opportunities, based on teacher observations."
+      ],
+      "rationale": "Career areas are broad possibilities linked to current stronger subjects, not predicted outcomes."
+    }
+  },
+  {
+    "profile": {
+      "student_id": "STU-1019",
+      "student_name": "Steve Rogers",
+      "subject_averages": {
+        "History": 85.5,
+        "Physical Ed": 96.0,
+        "English": 73.0,
+        "Math": 68.5,
+        "Physics": 72.0,
+        "Biology": 73.0,
+        "Government": 88.5
+      },
+      "strongest_subjects": [
+        "Physical Ed",
+        "Government",
+        "History"
+      ],
+      "focus_subjects": [],
+      "performance_trends": {
+        "History": "stable",
+        "Physical Ed": "improving",
+        "English": "stable",
+        "Math": "stable",
+        "Physics": "stable",
+        "Biology": "stable",
+        "Government": "stable"
+      },
+      "attendance_average": 89.0,
+      "attendance_note": "Attendance appears consistent",
+      "observation_signals": [
+        "engagement_or_curiosity"
+      ],
+      "evidence": [
+        "14 record(s) analysed"
+      ]
+    },
+    "recommendations": {
+      "focus_subjects": [
+        "Physical Ed"
+      ],
+      "skills_to_build": [
+        "writing",
+        "critical reading",
+        "research and communication"
+      ],
+      "possible_related_career_areas": [
+        "communications",
+        "law-related study",
+        "education",
+        "public policy"
+      ],
+      "suggested_actions": [
+        "Set a short-term learning goal and review progress in Physical Ed."
+      ],
+      "rationale": "Career areas are broad possibilities linked to current stronger subjects, not predicted outcomes."
+    }
+  },
+  {
+    "profile": {
+      "student_id": "STU-1020",
+      "student_name": "Tony Stark",
+      "subject_averages": {
+        "Physics": 98.0,
+        "Technology": 100.0,
+        "Math": 94.5,
+        "Coding": 94.5,
+        "Computer Science": 96.0,
+        "Chemistry": 87.0,
+        "Engineering": 99.0
+      },
+      "strongest_subjects": [
+        "Technology",
+        "Engineering",
+        "Physics"
+      ],
+      "focus_subjects": [],
+      "performance_trends": {
+        "Physics": "stable",
+        "Technology": "stable",
+        "Math": "stable",
+        "Coding": "improving",
+        "Computer Science": "stable",
+        "Chemistry": "stable",
+        "Engineering": "stable"
+      },
+      "attendance_average": 91.0,
+      "attendance_note": "Attendance appears consistent",
+      "observation_signals": [
+        "hands_on"
+      ],
+      "evidence": [
+        "14 record(s) analysed"
+      ]
+    },
+    "recommendations": {
+      "focus_subjects": [
+        "Technology"
+      ],
+      "skills_to_build": [
+        "quantitative reasoning",
+        "data literacy",
+        "problem solving",
+        "computational thinking",
+        "programming",
+        "digital problem solving"
+      ],
+      "possible_related_career_areas": [
+        "engineering",
+        "data analysis",
+        "actuarial science",
+        "software development",
+        "cybersecurity",
+        "IT"
+      ],
+      "suggested_actions": [
+        "Set a short-term learning goal and review progress in Technology.",
+        "Consider practical or project-based practice, based on teacher observations."
+      ],
+      "rationale": "Career areas are broad possibilities linked to current stronger subjects, not predicted outcomes."
+    }
+  }
+]
