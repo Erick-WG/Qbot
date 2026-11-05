@@ -7,9 +7,12 @@ from qbot.handler import get_completion_with_tools
 
 
 # environment variables.
-load_dotenv()
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-BASE_URL = os.getenv("BASE_URL")
+# load_dotenv()
+# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+# BASE_URL = os.getenv("BASE_URL")
+
+OPENAI_API_KEY = st.secrets("OPENAI_API_KEY")
+BASE_URL = st.secrets("BASE_URL")
 
 st.set_page_config(page_title="Qbot", layout="wide")
 st.title("QBot")
