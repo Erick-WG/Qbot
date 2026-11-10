@@ -1,4 +1,4 @@
-import os
+# import os
 import asyncio
 import httpx
 import traceback
@@ -12,19 +12,19 @@ from qbot.handler import get_completion_with_tools
 
 
 # environment variables.
-load_dotenv()
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-BASE_URL = os.getenv("BASE_URL")
-SUPABASE_MCP_URL = os.getenv("SUPABASE_MCP_URL")
-SUPABASE_ACCESS_TOKEN = os.getenv("SUPABASE_ACCESS_TOKEN")
+# load_dotenv()
+# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+# BASE_URL = os.getenv("BASE_URL")
+# SUPABASE_MCP_URL = os.getenv("SUPABASE_MCP_URL")
+# SUPABASE_ACCESS_TOKEN = os.getenv("SUPABASE_ACCESS_TOKEN")
 
 #! streamlit secrets
-# OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
-# BASE_URL = st.secrets["BASE_URL"]
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+BASE_URL = st.secrets["BASE_URL"]
 
-# # Extract Supabase MCP credentials from Streamlit Secrets
-# SUPABASE_MCP_URL = st.secrets.get("SUPABASE_MCP_URL", "https://supabase.com")
-# SUPABASE_ACCESS_TOKEN = st.secrets.get("SUPABASE_ACCESS_TOKEN", "")
+# Extract Supabase MCP credentials from Streamlit Secrets
+SUPABASE_MCP_URL = st.secrets["SUPABASE_MCP_URL"]
+SUPABASE_ACCESS_TOKEN = st.secrets["SUPABASE_ACCESS_TOKEN"]
 
 st.set_page_config(page_title="Qbot", layout="wide")
 st.title("QBot")
