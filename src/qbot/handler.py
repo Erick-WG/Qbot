@@ -1,9 +1,14 @@
 import json
+import re
+import uuid
 from openai import OpenAI
 from openai.types.chat import ChatCompletion
 from mcp import ClientSession
 from mcp.types import CallToolResult
 from .data_functions import read_student_csv, read_student_csv_tool
+
+MODEL = "nvidia/nemotron-3.5-lightning-30b-a3b"
+MAX_TOOL_ROUNDS = 6  # safety limit so the model can't loop forever
 
 # 1. Keep your local function mapping intact
 LOCAL_FUNCTION_REGISTRY = {
@@ -14,18 +19,17 @@ LOCAL_TOOLS = [
     read_student_csv_tool,
 ]
 
-# 2. Hybrid Function Executor (Now asynchronous to handle MCP calls)
+
+# 2. Hybrid Function Executor (async to handle MCP calls)
 async def execute_tool(func_name, func_args, mcp_session: ClientSession = None):
     # ROUTE A: Execute locally if it exists in your registry
     if func_name in LOCAL_FUNCTION_REGISTRY:
-        results = LOCAL_FUNCTION_REGISTRY[func_name](**func_args)
-        return results
-    
+        return LOCAL_FUNCTION_REGISTRY[func_name](**func_args)
+
     # ROUTE B: Route over the network to Supabase if an active MCP session exists
     elif mcp_session is not None:
         try:
             mcp_result = await mcp_session.call_tool(name=func_name, arguments=func_args)
-            # The MCP spec wraps structural text data inside content objects
             return mcp_result.content
         except Exception as e:
             return {"status": "error", "content": f"Supabase MCP execution failed: {str(e)}"}
@@ -48,7 +52,7 @@ def tool_result_to_text(result) -> str:
         text = "\n".join(_block_to_text(b) for b in (result.content or []))
         return f"Tool error: {text}" if result.isError else text
 
-    # MCP content list (what you have now: result = response.content)
+    # MCP content list
     if isinstance(result, list) and any(hasattr(b, "type") and hasattr(b, "model_dump") for b in result):
         return "\n".join(_block_to_text(b) for b in result)
 
@@ -61,40 +65,85 @@ def tool_result_to_text(result) -> str:
         return str(result)
 
 
-# Tool calls extraction (Unchanged, completely compatible)
+# ---------------------------------------------------------------------------
+# Tool call extraction
+# ---------------------------------------------------------------------------
+def _assistant_tool_message(tools_called, content=None):
+    """Build the assistant message that records the tool calls in the history."""
+    return {
+        "role": "assistant",
+        "content": content,
+        "tool_calls": [{
+            "id": t["id"],
+            "type": "function",
+            "function": {
+                "name": t["func_name"],
+                "arguments": json.dumps(t["func_args"]),
+            },
+        } for t in tools_called],
+    }
+
+
 def process_tool_call(response: ChatCompletion):
-    tools_called = []
+    """Extract proper (structured) tool calls from the model response."""
     message = response.choices[0].message
-    
-    if not hasattr(message, "tool_calls") or not message.tool_calls:
+    if not getattr(message, "tool_calls", None):
         return None, None
-    
+
+    tools_called = []
     for tool in message.tool_calls:
+        try:
+            args = json.loads(tool.function.arguments or "{}")
+        except json.JSONDecodeError:
+            args = {}
         tools_called.append({
             "id": tool.id,
             "func_name": tool.function.name,
-            "func_args": json.loads(tool.function.arguments),
+            "func_args": args,
         })
+    return tools_called, _assistant_tool_message(tools_called, message.content)
 
-    tools_info = {
-        "role": "assistant",
-        "content": message.content,
-        "tool_calls": [{
-            "id": tool["id"],
-            "type": "function",
-            "function": {
-                "name": tool["func_name"],
-                "arguments": json.dumps(tool["func_args"]),
-            }
-        } for tool in tools_called ]
-    }
-    
-    return tools_called, tools_info
 
-# 3. Completion loop with hybrid tools (Updated to async def)
-async def get_completion_with_tools(client: OpenAI, messages: list, mcp_session: ClientSession, supabase_mcp_tools: list, stream=False):
-    
-    # Compile unified flat list: Local Tool Definitions + Formatted Remote MCP Tools
+# Some models/servers return their native tool call markup as plain text, like:
+#   <tool_call><function=execute_sql><parameter=query>SELECT ...</parameter></function></tool_call>
+_TOOL_CALL_RE = re.compile(r"<tool_call>(.*?)</tool_call>", re.DOTALL)
+_FUNCTION_RE = re.compile(r"<function=([^>\s]+)>(.*?)</function>", re.DOTALL)
+_PARAM_RE = re.compile(r"<parameter=([^>\s]+)>(.*?)</parameter>", re.DOTALL)
+
+
+def parse_text_tool_calls(content):
+    """Fallback: turn tool call markup found in message text into real tool calls."""
+    calls = []
+    if not content or "<tool_call>" not in content:
+        return calls
+    for block in _TOOL_CALL_RE.findall(content):
+        fn = _FUNCTION_RE.search(block)
+        if not fn:
+            continue
+        name, body = fn.group(1), fn.group(2)
+        args = {key: value.strip() for key, value in _PARAM_RE.findall(body)}
+        calls.append({
+            "id": f"call_{uuid.uuid4().hex[:12]}",
+            "func_name": name,
+            "func_args": args,
+        })
+    return calls
+
+
+def strip_tool_markup(text):
+    """Remove any leftover tool-call markup so it never reaches the teacher."""
+    if not text:
+        return ""
+    return _TOOL_CALL_RE.sub("", text).strip()
+
+
+# ---------------------------------------------------------------------------
+# 3. Completion loop with hybrid tools
+# ---------------------------------------------------------------------------
+async def get_completion_with_tools(client: OpenAI, messages: list, mcp_session: ClientSession,
+                                    supabase_mcp_tools: list, stream=False):
+
+    # Unified tool list: local tool definitions + remote MCP tools
     combined_tools = LOCAL_TOOLS.copy()
     for mcp_tool in supabase_mcp_tools:
         combined_tools.append({
@@ -106,58 +155,56 @@ async def get_completion_with_tools(client: OpenAI, messages: list, mcp_session:
             }
         })
 
-    # Get first completion with combined tools schema list
-    response: ChatCompletion = client.chat.completions.create(
-        model="nvidia/nemotron-3.5-lightning-30b-a3b",
-        messages=messages,
-        tools=combined_tools,
-        stream=stream
-    )
-    
-    message = response.choices[0].message
-    
-    # check for tool calls in response
-    tools_called, tools_info = process_tool_call(response=response)
-    
-    if not tools_called:
-        return message.content, messages + [{
-            "role": "assistant", "content": message.content
-        }]
-    
-    # Asynchronous Execution Loop
-    tools_executed = []
-    for tool in tools_called:
-        # Passes execution tasks to either local runtime or the MCP network tunnel
-        result = await execute_tool(
-            func_name=tool["func_name"], 
-            func_args=tool["func_args"], 
-            mcp_session=mcp_session
+    working = messages.copy()
+
+    # The model may need several rounds, e.g. look up a name, then fetch the profile,
+    # then fetch performance data. Tools stay available on every round.
+    for _ in range(MAX_TOOL_ROUNDS):
+        response: ChatCompletion = client.chat.completions.create(
+            model=MODEL,
+            messages=working,
+            tools=combined_tools,
         )
-        
-        tools_executed.append({
-            "role": "tool",
-            "tool_call_id": tool["id"],
-            "content": tool_result_to_text(result=result)
-        })
-        
-    #* update the messages (shallow copy of current messages), append tools info and extend execution info.
-    updated_messages: list = messages.copy()
-    
-    updated_messages.append(tools_info)
-    updated_messages.extend(tools_executed)
-    
-    #! get final response with processed tool calls and their results.
-    
-    final_completion: ChatCompletion = client.chat.completions.create(
-        model="nvidia/nemotron-3.5-lightning-30b-a3b",
-        messages=updated_messages,
-        stream=False
+        message = response.choices[0].message
+
+        tools_called, tools_info = process_tool_call(response)
+
+        # Fallback for tool calls that came back as plain text
+        if not tools_called:
+            tools_called = parse_text_tool_calls(message.content)
+            if tools_called:
+                tools_info = _assistant_tool_message(tools_called, content=None)
+
+        # No tool calls: this is the final answer
+        if not tools_called:
+            final_output = strip_tool_markup(message.content) or (
+                "I could not complete that request. Please try asking again."
+            )
+            return final_output, working + [{"role": "assistant", "content": final_output}]
+
+        # Run the tools and add their results to the conversation
+        working.append(tools_info)
+        for tool in tools_called:
+            result = await execute_tool(
+                func_name=tool["func_name"],
+                func_args=tool["func_args"],
+                mcp_session=mcp_session,
+            )
+            working.append({
+                "role": "tool",
+                "tool_call_id": tool["id"],
+                "content": tool_result_to_text(result=result),
+            })
+
+    # Too many rounds: ask for an answer from what has been retrieved so far (no tools)
+    response = client.chat.completions.create(
+        model=MODEL,
+        messages=working + [{
+            "role": "user",
+            "content": "Answer now using only the information already retrieved. Do not call any more tools.",
+        }],
     )
-    
-    final_output = final_completion.choices[0].message.content
-        
-            
-    return final_output, updated_messages + [{
-        "role": "assistant",
-        "content": final_output
-    }]
+    final_output = strip_tool_markup(response.choices[0].message.content) or (
+        "I could not finish retrieving the data. Please try a more specific request."
+    )
+    return final_output, working + [{"role": "assistant", "content": final_output}]

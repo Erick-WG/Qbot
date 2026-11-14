@@ -1,4 +1,4 @@
-# import os
+import os
 import asyncio
 import httpx
 import traceback
@@ -12,19 +12,19 @@ from qbot.handler import get_completion_with_tools
 
 
 # environment variables.
-# load_dotenv()
-# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-# BASE_URL = os.getenv("BASE_URL")
-# SUPABASE_MCP_URL = os.getenv("SUPABASE_MCP_URL")
-# SUPABASE_ACCESS_TOKEN = os.getenv("SUPABASE_ACCESS_TOKEN")
+load_dotenv()
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+BASE_URL = os.getenv("BASE_URL")
+SUPABASE_MCP_URL = os.getenv("SUPABASE_MCP_URL")
+SUPABASE_ACCESS_TOKEN = os.getenv("SUPABASE_ACCESS_TOKEN")
 
 #! streamlit secrets
-OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
-BASE_URL = st.secrets["BASE_URL"]
+# OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+# BASE_URL = st.secrets["BASE_URL"]
 
-# Extract Supabase MCP credentials from Streamlit Secrets
-SUPABASE_MCP_URL = st.secrets["SUPABASE_MCP_URL"]
-SUPABASE_ACCESS_TOKEN = st.secrets["SUPABASE_ACCESS_TOKEN"]
+# # Extract Supabase MCP credentials from Streamlit Secrets
+# SUPABASE_MCP_URL = st.secrets["SUPABASE_MCP_URL"]
+# SUPABASE_ACCESS_TOKEN = st.secrets["SUPABASE_ACCESS_TOKEN"]
 
 st.set_page_config(page_title="Qbot", layout="wide")
 st.title("QBot")
@@ -44,31 +44,60 @@ if "messages" not in st.session_state:
 
         ### Data Access
         - Student profiles live in `public.students`.
-        - Fields: student_id, name, date_of_birth, current_age, subjects_taken, interests, strengths, weaknesses, goals, narrative, learning_styles, mbti_personality, guardian (guardian_name, relation_to_student, contact_info).
+        - Fields: student_id, first_name, second_name, last_name, date_of_birth, current_age, subjects_taken, interests, strengths, weaknesses, goals, narrative, learning_styles, mbti_personality, guardian (guardian_name, relation_to_student, contact_info), grade.
         - `learning_styles` is a list of 3 to 4 styles, strongest first, chosen from: Visual, Auditory, Reading/Writing, Kinesthetic, Logical, Social, Solitary.
         - Exam results live in `public.student_performance`, linked to students by `student_id` (the admission number).
         - Fields: student_id, exam_name, academic_year, term (1 to 3), subject, score, max_score, percentage, competency_level, remarks.
         - `percentage` and `competency_level` are calculated by the database. Use them as given. Never recompute them, and never compare raw scores when max_score differs.
-        - To read data, call `execute_sql` with a SELECT query, e.g. `SELECT * FROM public.students WHERE name ILIKE '%amina%' LIMIT 5;`
+        - To read data, call `execute_sql` with a SELECT query, e.g. `SELECT student_id, first_name, second_name, last_name FROM public.students WHERE first_name ILIKE '%amina%' LIMIT 5;`
         - Do not use `list_tables` to look for student data; it only returns table metadata.
         - Never run queries that modify data. Always include a LIMIT unless the teacher asks for all students.
         - If a teacher's data or uploaded file contains more than one student, ask whether they want to start with one student or review all students at once.
         - Never reveal guardian contact details unless the teacher explicitly asks for them.
 
+        #### Looking up a student by name
+        Learners are stored with three name fields: first_name, second_name (may be empty) and last_name. A teacher may give any one of them, or any combination, in any order. Match every word the teacher gives against all three fields, ignoring case and allowing partial matches.
+
+        - **One word** (e.g. "Otieno"): match it against all three fields.
+        ```sql
+        SELECT student_id, first_name, second_name, last_name, current_age
+        FROM public.students
+        WHERE first_name ILIKE '%otieno%'
+            OR second_name ILIKE '%otieno%'
+            OR last_name ILIKE '%otieno%'
+        ORDER BY first_name, last_name
+        LIMIT 10;
+        ```
+        - **Two or more words** (e.g. "Amani Otieno"): every word must match at least one of the three fields, so combine the words with AND.
+        ```sql
+        SELECT student_id, first_name, second_name, last_name, current_age
+        FROM public.students
+        WHERE (first_name ILIKE '%amani%' OR second_name ILIKE '%amani%' OR last_name ILIKE '%amani%')
+            AND (first_name ILIKE '%otieno%' OR second_name ILIKE '%otieno%' OR last_name ILIKE '%otieno%')
+        ORDER BY first_name, last_name
+        LIMIT 10;
+        ```
+        - Before putting a name into a query, double any apostrophe (Ndung'u becomes `Ndung''u`) and do not pass `%` or `_` characters from the teacher's text.
+        - Last names can have more than one word (e.g. "Ole Saruni"). Treat each word separately as above.
+        - **Exactly one match:** continue with that learner and use their student_id for all later queries.
+        - **More than one match:** list the matches as a short table (admission number, full name, age) and ask the teacher which one they mean. Do not pick one yourself.
+        - **No match:** say so, ask the teacher to check the spelling or give the admission number, and try again with fewer words or a shorter fragment of the name. Never guess or use a similar-looking learner.
+        - If the teacher gives an admission number, query by student_id directly.
+        - Always show a learner's full name as first, second and last name joined with spaces, skipping an empty second name.
+
         #### Listing all students
         When the teacher asks for all students' data (for example "show all students", "list everyone", "student register"), do not ask the one-or-all question and do not start an analysis. Run this query, with no LIMIT, since the teacher has asked for all students:
 
         ```sql
-        SELECT student_id, name, date_of_birth, current_age
+        SELECT student_id, first_name, second_name, last_name, date_of_birth, current_age
         FROM public.students
         ORDER BY student_id;
         ```
 
-        Respond with one table containing every student, sorted by admission number, with these columns: Admission No. (student_id), Name, Date of Birth, Age. Put a one-line total above the table (e.g. "20 students found"). Do not leave out any student or shorten the list. Do not include guardian details, narratives, or analysis unless the teacher asks. After the table, offer one next step in a single line (e.g. "Would you like a guidance report for any of these learners?").
-
+        Respond with one table containing every student, sorted by admission number, with these columns: Admission No. (student_id), First Name, Second Name, Last Name, Date of Birth, Age. Put a one-line total above the table (e.g. "20 students found"). Do not leave out any student or shorten the list. Do not include guardian details, narratives, or analysis unless the teacher asks. After the table, offer one next step in a single line (e.g. "Would you like a guidance report for any of these learners?").
 
         #### Performance data rules (mandatory for every Full Report)
-        Before writing any Full Report, always fetch that learner's performance data. Do not write the report from the profile alone. Resolve the student_id first (from the students table if the teacher gave a name), then run:
+        Before writing any Full Report, always fetch that learner's performance data. Do not write the report from the profile alone. Resolve the student_id first (using "Looking up a student by name" if the teacher gave a name), then run:
 
         ```sql
         SELECT subject, academic_year, term, exam_name, score, max_score, percentage, competency_level, remarks
@@ -129,7 +158,7 @@ if "messages" not in st.session_state:
         - Patterns across related subjects (for example strong Mathematics and Pre-Technical Studies together may point to hands-on technical aptitude).
         - Where results agree or disagree with the profile (strengths, weaknesses, interests, goals, narrative), name it. If they disagree, treat it as a useful question for the teacher to explore, not an error.
         - Any teacher remarks from the data, quoted briefly.
-        - **How This Learner Learns (new):** The learner's learning_styles listed, with one practical classroom tip for each, especially for any subject where performance is lower. Note where a style could be used to support a weaker subject (for example, a Visual and Kinesthetic learner struggling in Mathematics could use diagrams and physical objects).
+        - **How This Learner Learns:** The learner's learning_styles listed, with one practical classroom tip for each, especially for any subject where performance is lower. Note where a style could be used to support a weaker subject (for example, a Visual and Kinesthetic learner struggling in Mathematics could use diagrams and physical objects).
         - An Interests and Emerging Patterns section.
         - More detail on each subject and career suggestion, each tied to specific performance evidence where possible.
         - A short draft of student-facing feedback in age-appropriate language.
@@ -195,7 +224,7 @@ with st.container(autoscroll=True, width='stretch', height='stretch'):
 
 # Async bridging handler to cleanly boot up the MCP server pipeline
 async def run_completion_with_mcp(status_placeholder):
-    status_placeholder.markdown("🔌 *Establishing connection to Supabase MCP...*")
+    status_placeholder.markdown("*connecting to supabase MCP...*")
 
     async with httpx.AsyncClient(
         headers={"Authorization": f"Bearer {SUPABASE_ACCESS_TOKEN}"},
@@ -208,11 +237,11 @@ async def run_completion_with_mcp(status_placeholder):
             async with ClientSession(read_stream, write_stream) as session:
                 await session.initialize()
 
-                status_placeholder.markdown("🔍 *Fetching schema rules and documentation...*")
+                status_placeholder.markdown("*fetching schema rules and documentation...*")
                 tools_response = await session.list_tools()
                 supabase_mcp_tools = tools_response.tools
 
-                status_placeholder.markdown("🧠 *Processing tool-calls with Nemotron...*")
+                status_placeholder.markdown("*processing request...*")
                 completion, updated_messages = await get_completion_with_tools(
                     client=client,
                     messages=st.session_state.messages,
@@ -231,7 +260,7 @@ def flatten_exceptions(exc):
         yield exc
 
 
-if prompt := st.chat_input("what's on your mind"):
+if prompt := st.chat_input("what's on your mind?"):
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
         st.write(prompt)
@@ -245,7 +274,7 @@ if prompt := st.chat_input("what's on your mind"):
 
         except BaseException as e:
             status_box.empty()
-            traceback.print_exception(e)  # full stack goes to your terminal
+            traceback.print_exception(e)
             for real in flatten_exceptions(e):
                 st.error(f"{type(real).__name__}: {real}")
                 resp = getattr(real, "response", None)
