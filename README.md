@@ -62,7 +62,7 @@ flowchart LR
 | `students` | Admission number (`student_id`), first, second, and last name, date of birth, current age, subjects taken, interests, strengths, weaknesses, goals, a narrative about the learner, 3 to 4 learning styles, optional MBTI type, and guardian details |
 | `student_performance` | Final-exam results per subject, linked to `students` by `student_id`, with calculated percentage and competency level |
 
-`current_age` is derived from `date_of_birth` by a trigger and refreshed daily by a pg_cron job. Row Level Security is enabled with public roles revoked, and a `students_agent_view` exposes learner data without guardian contact details. The full schema is in [`schema.sql`](schema.sql).
+`current_age` is derived from `date_of_birth` by a trigger and refreshed daily by a pg_cron job. Row Level Security is enabled with public roles revoked, and a `students_agent_view` exposes learner data without guardian contact details.
 
 **Request flow**
 
@@ -112,12 +112,11 @@ You can also upload a CSV of student data in the sidebar. If the file contains m
 
 | Layer | Technology |
 |---|---|
-| Language | Python 3.12 (app), JavaScript (data seeding) |
+| Language | Python 3.12 |
 | Interface | Streamlit chat UI |
 | LLM access | OpenAI-compatible API (OpenAI Python SDK) with a configurable endpoint and model |
 | Agent tooling | Model Context Protocol (MCP) Python SDK & [Supabase MCP](https://supabase.com/docs/guides/ai-tools/mcp) |
 | Database | Supabase (PostgreSQL, Row Level Security, pg_cron) |
-| Validation | Zod (profile schema for seeding) |
 | Data handling | pandas, tabulate |
 | Packaging | uv |
 
