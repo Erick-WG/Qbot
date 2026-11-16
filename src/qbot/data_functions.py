@@ -20,6 +20,11 @@ ALIASES = {
     "attendance": ("attendance", "attendance_rate", "attendance %", "present"),
     "remarks": ("remarks", "observation", "teacher_observation", "notes", "comment"),
     "date": ("date", "term", "semester", "period", "school_year"),
+    
+    # aptitude data fields support
+    "domain": ("domain", "aptitude_domain", "aptitude", "category", "skill_area"),
+    "percentile": ("percentile", "percentile_rank", "pct_rank"),
+    "performance_band": ("performance_band", "band", "level", "competency_level"),
 }
 
 
