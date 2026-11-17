@@ -28,6 +28,7 @@ SUPABASE_ACCESS_TOKEN = os.getenv("SUPABASE_ACCESS_TOKEN")
 
 st.set_page_config(page_title="Qbot", layout="wide")
 st.title("QBot")
+st.write("Ondemand subject selection and career guidance")
 
 client = OpenAI(
 	api_key=OPENAI_API_KEY,
