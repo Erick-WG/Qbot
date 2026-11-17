@@ -151,7 +151,7 @@ if "messages" not in st.session_state:
 
         ---
 
-        ### 1. Executive Summary
+        ### 1. Student profile
         [Write a 3–4 sentence paragraph summarizing the student's strongest aptitude domains and academic patterns, what those strengths indicate about their natural cognitive affinity, and a brief note on average or developing areas framed constructively.]
 
         ---
