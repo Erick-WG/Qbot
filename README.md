@@ -166,6 +166,7 @@ The Supabase server exposes further tools (such as schema migrations and project
 
 ## Future improvements
 
+- Make the agent mobile native.
 - Add Voice support to save teachers more time.
 - Add Term 1 and Term 2 results to enable full-year trend analysis.
 - Validate and ingest teachers' own performance CSVs directly into the database.
