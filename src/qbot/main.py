@@ -305,7 +305,7 @@ if prompt := st.chat_input("what's on your mind?"):
             
             # tokens used
             st.session_state.usage += completion_tokens
-            with st.expander("Total tokens used"):
+            with st.expander("Current token use"):
                 st.write(completion_tokens)
 
         except BaseException as e:
