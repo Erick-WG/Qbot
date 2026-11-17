@@ -172,6 +172,7 @@ async def get_completion_with_tools(client: OpenAI, messages: list, mcp_session:
         
         # tokens used
         completion_tokens += response.usage.completion_tokens
+        completion_tokens += response.usage.prompt_tokens
 
         tools_called, tools_info = process_tool_call(response)
 
@@ -213,6 +214,7 @@ async def get_completion_with_tools(client: OpenAI, messages: list, mcp_session:
     
     # final completion tokens used
     completion_tokens += response.usage.completion_tokens
+    completion_tokens += response.usage.prompt_tokens
     
     final_output = strip_tool_markup(response.choices[0].message.content) or (
         "I could not finish retrieving the data. Please try a more specific request."
