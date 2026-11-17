@@ -1,6 +1,7 @@
 import json
 import re
 import uuid
+import streamlit as st
 from openai import OpenAI
 from openai.types.chat import ChatCompletion
 from mcp import ClientSession
@@ -142,6 +143,8 @@ def strip_tool_markup(text):
 # ---------------------------------------------------------------------------
 async def get_completion_with_tools(client: OpenAI, messages: list, mcp_session: ClientSession,
                                     supabase_mcp_tools: list, stream=False):
+    # token completions
+    completion_tokens = 0
 
     # Unified tool list: local tool definitions + remote MCP tools
     combined_tools = LOCAL_TOOLS.copy()
@@ -166,6 +169,9 @@ async def get_completion_with_tools(client: OpenAI, messages: list, mcp_session:
             tools=combined_tools,
         )
         message = response.choices[0].message
+        
+        # tokens used
+        completion_tokens += response.usage.completion_tokens
 
         tools_called, tools_info = process_tool_call(response)
 
@@ -180,7 +186,7 @@ async def get_completion_with_tools(client: OpenAI, messages: list, mcp_session:
             final_output = strip_tool_markup(message.content) or (
                 "I could not complete that request. Please try asking again."
             )
-            return final_output, working + [{"role": "assistant", "content": final_output}]
+            return final_output, working + [{"role": "assistant", "content": final_output}], completion_tokens
 
         # Run the tools and add their results to the conversation
         working.append(tools_info)
@@ -204,7 +210,11 @@ async def get_completion_with_tools(client: OpenAI, messages: list, mcp_session:
             "content": "Answer now using only the information already retrieved. Do not call any more tools.",
         }],
     )
+    
+    # final completion tokens used
+    completion_tokens += response.usage.completion_tokens
+    
     final_output = strip_tool_markup(response.choices[0].message.content) or (
         "I could not finish retrieving the data. Please try a more specific request."
     )
-    return final_output, working + [{"role": "assistant", "content": final_output}]
+    return final_output, working + [{"role": "assistant", "content": final_output}], completion_tokens

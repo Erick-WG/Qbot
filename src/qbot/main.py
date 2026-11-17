@@ -34,6 +34,8 @@ client = OpenAI(
 	base_url=BASE_URL
 )
 
+if "usage" not in st.session_state:
+    st.session_state.usage = 0
 
 if "messages" not in st.session_state:
     st.session_state.messages = [{
@@ -214,6 +216,9 @@ with st.sidebar:
     upload_csv = st.file_uploader("Upload student file", type="csv")
     st.write("you can upload as many files possible relating to one student or upload files containing all students (although not recommended)")
     
+    if st.session_state.usage:
+        st.write(f"Total tokens used: {st.session_state.usage}")
+    
     if upload_csv:
         # Check if we have already processed this file in a previous rerun
         if not st.session_state.file_processed:
@@ -268,13 +273,13 @@ async def run_completion_with_mcp(status_placeholder):
                 supabase_mcp_tools = tools_response.tools
 
                 status_placeholder.markdown("*processing request...*")
-                completion, updated_messages = await get_completion_with_tools(
+                completion, updated_messages, completion_tokens = await get_completion_with_tools(
                     client=client,
                     messages=st.session_state.messages,
                     mcp_session=session,
                     supabase_mcp_tools=supabase_mcp_tools,
                 )
-                return completion, updated_messages
+                return completion, updated_messages, completion_tokens
             
 def flatten_exceptions(exc):
     """Recursively pull the real errors out of (nested) exception groups."""
@@ -294,9 +299,14 @@ if prompt := st.chat_input("what's on your mind?"):
     with st.chat_message("assistant"):
         status_box = st.empty()
         try:
-            completion, updated_messages = asyncio.run(run_completion_with_mcp(status_box))
+            completion, updated_messages, completion_tokens = asyncio.run(run_completion_with_mcp(status_box))
             status_box.markdown(completion)
             st.session_state.messages = updated_messages
+            
+            # tokens used
+            st.session_state.usage += completion_tokens
+            with st.expander("Total tokens used"):
+                st.write(completion_tokens)
 
         except BaseException as e:
             status_box.empty()
